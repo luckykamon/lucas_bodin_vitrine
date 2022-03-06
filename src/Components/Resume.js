@@ -3,7 +3,15 @@ import Fade from "react-reveal";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 // import {faCoffee} from '@fortawesome/free-solid-svg-icons'
 import {
-    faPython, faPhp, faDocker, faGitlab, faGithub, faJs, faJava, faCss3Alt, faHtml5
+    faCss3Alt,
+    faDocker,
+    faGithub,
+    faGitlab,
+    faHtml5,
+    faJava,
+    faJs,
+    faPhp,
+    faPython
 } from '@fortawesome/free-brands-svg-icons'
 import {ReactSVG} from "react-svg";
 

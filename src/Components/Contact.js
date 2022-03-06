@@ -36,51 +36,51 @@ class Contact extends Component {
 
                 <div className="row">
                     {/*<Fade left duration={1000}>*/}
-                        <div className="eight columns">
-                            <fieldset>
-                                <Fade left duration={1000}>
-                                    <div>
-                                        <label htmlFor="contactSubject">
-                                            Objet
-                                        </label>
-                                        <input
-                                            type="text"
-                                            defaultValue=""
-                                            size="35"
-                                            id="contactSubject"
-                                            name="contactSubject"
-                                            onChange={this.handleChange}
-                                        />
-                                    </div>
-                                </Fade>
+                    <div className="eight columns">
+                        <fieldset>
+                            <Fade left duration={1000}>
+                                <div>
+                                    <label htmlFor="contactSubject">
+                                        Objet
+                                    </label>
+                                    <input
+                                        type="text"
+                                        defaultValue=""
+                                        size="35"
+                                        id="contactSubject"
+                                        name="contactSubject"
+                                        onChange={this.handleChange}
+                                    />
+                                </div>
+                            </Fade>
 
-                                <Fade left duration={1000}>
-                                    <div>
-                                        <label htmlFor="contactMessage">
-                                            Message
-                                        </label>
-                                        <textarea
-                                            cols="50"
-                                            rows="15"
-                                            id="contactMessage"
-                                            name="contactMessage"
-                                        />
-                                    </div>
-                                </Fade>
+                            <Fade left duration={1000}>
+                                <div>
+                                    <label htmlFor="contactMessage">
+                                        Message
+                                    </label>
+                                    <textarea
+                                        cols="50"
+                                        rows="15"
+                                        id="contactMessage"
+                                        name="contactMessage"
+                                    />
+                                </div>
+                            </Fade>
 
-                                <Fade left duration={1000}>
-                                    <div>
-                                        <button
-                                            className="submit"
-                                            onClick={sendEmail}>Enoyer un mail
-                                        </button>
-                                        <span id="image-loader">
+                            <Fade left duration={1000}>
+                                <div>
+                                    <button
+                                        className="submit"
+                                        onClick={sendEmail}>Enoyer un mail
+                                    </button>
+                                    <span id="image-loader">
                                         <img alt="" src="images/loader.gif"/>
                                     </span>
-                                    </div>
-                                </Fade>
-                            </fieldset>
-                        </div>
+                                </div>
+                            </Fade>
+                        </fieldset>
+                    </div>
                     {/*</Fade>*/}
 
                     <Fade right duration={1000}>
