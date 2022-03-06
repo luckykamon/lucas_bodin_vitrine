@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.lucas_bodin",
+  "appName": "Lucas Bodin",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "cordova": {}
+}
