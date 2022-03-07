@@ -23,7 +23,7 @@ class Footer extends Component {
                             <ul className="social-links">{networks}</ul>
 
                             <ul className="copyright">
-                                <li>Copyright &copy; 2022 Lucas Bodin</li>
+                                <li>Copyright &copy; 2022 Lucas Bodin &bull; <a href="/confidentialite">Politique de confidentialité</a></li>
                             </ul>
                         </div>
                     </Fade>
