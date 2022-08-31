@@ -3,14 +3,14 @@ import Fade from "react-reveal";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 // import {faCoffee} from '@fortawesome/free-solid-svg-icons'
 import {
-    faCss3Alt,
+    // faCss3Alt,
     faDocker,
     faGithub,
     faGitlab,
-    faHtml5,
+    // faHtml5,
     faJava,
     faJs,
-    faPhp,
+    // faPhp,
     faPython
 } from '@fortawesome/free-brands-svg-icons'
 import {ReactSVG} from "react-svg";
@@ -104,48 +104,32 @@ class Resume extends Component {
                 </Fade>
 
                 <div>
-                    <Fade bottom duration={1300}>
-                        <div className="nine columns main-col">
-                            <h3>IDE</h3>
-                            <div className="info">
-                                <ReactSVG src="/svg/jetBrains.svg" wrapper="span"/>
-                                <ReactSVG src="/svg/visualStudioCode.svg" wrapper="span"/>
-                                <ReactSVG src="/svg/eclipse.svg" wrapper="span"/>
-                            </div>
-                        </div>
-                    </Fade>
 
                     <Fade bottom duration={1300}>
                         <div className="nine columns main-col" style={{float: "right"}}>
                             <h3>Language</h3>
-                            <div className="info">
-                                <FontAwesomeIcon icon={faPython}
-                                                 style={{
-                                                     color: "black", width: "12%", height: "25%", margin: "5%"
-                                                 }}/>
-                                <ReactSVG src="/svg/c.svg" wrapper="span"/>
-                                <ReactSVG src="/svg/c++.svg" wrapper="span"/>
+                            <div className="info" style={{display: "flex"}}>
+                                <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+                                    <FontAwesomeIcon icon={faPython}
+                                                     style={{
+                                                         color: "black", width: "12%", height: "25%", margin: "5%"
+                                                     }}/>
+                                    <p>Python</p>
+                                </div>
+                                <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
                                 <FontAwesomeIcon icon={faJava}
                                                  style={{
                                                      color: "black", width: "12%", height: "25%", margin: "5%"
                                                  }}/>
-                                <FontAwesomeIcon icon={faHtml5}
-                                                 style={{
-                                                     color: "black", width: "12%", height: "25%", margin: "5%"
-                                                 }}/>
-                                <FontAwesomeIcon icon={faCss3Alt}
-                                                 style={{
-                                                     color: "black", width: "12%", height: "25%", margin: "5%"
-                                                 }}/>
+                                    <p>Java</p>
+                                </div>
+                                <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
                                 <FontAwesomeIcon icon={faJs}
                                                  style={{
                                                      color: "black", width: "12%", height: "25%", margin: "5%"
                                                  }}/>
-                                <FontAwesomeIcon icon={faPhp}
-                                                 style={{
-                                                     color: "black", width: "12%", height: "25%", margin: "5%"
-                                                 }}/>
-                                <ReactSVG src="/svg/ocaml.svg" wrapper="span"/>
+                                    <p>JavaScript</p>
+                                </div>
                             </div>
                         </div>
                     </Fade>
