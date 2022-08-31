@@ -11,10 +11,11 @@ class Header extends Component {
         const linkedin = this.props.data.linkedin;
         const name = this.props.data.name;
         const description = this.props.data.description;
+        const profilepic = "/images/" + this.props.data.image;
 
         return (
-            <header id="home">
-                <ParticlesBg type="lines" bg={true}/>
+            <header id="home" style={{height: "100%"}}>
+                {/*<ParticlesBg type="color" bg={true}/>*/}
                 <div id="nav-wrap">
                     <ul id="nav" className="nav">
                         <li className="current">
@@ -23,11 +24,11 @@ class Header extends Component {
                             </a>
                         </li>
 
-                        <li>
-                            <a className="smoothscroll" href="#about">
-                                À propos
-                            </a>
-                        </li>
+                        {/*<li>*/}
+                        {/*    <a className="smoothscroll" href="#about">*/}
+                        {/*        À propos*/}
+                        {/*    </a>*/}
+                        {/*</li>*/}
 
                         <li>
                             <a className="smoothscroll" href="#resume">
@@ -47,6 +48,17 @@ class Header extends Component {
                     <div className="banner-text">
                         <Fade bottom>
                             <h1 className="responsive-headline">{name}</h1>
+                        </Fade>
+                        <Fade bottom>
+                            <div className="row" style={{textAlign: "center"}}>
+                                {/*<div className="three columns">*/}
+                                    <img
+                                        className="profile-pic"
+                                        src={profilepic}
+                                        alt="Lucas Bodin Profile Pic"
+                                    />
+                                {/*</div>*/}
+                            </div>
                         </Fade>
                         <Fade bottom duration={1200}>
                             <h3>{description}.</h3>

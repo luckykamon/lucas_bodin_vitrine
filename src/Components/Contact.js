@@ -17,8 +17,6 @@ class Contact extends Component {
 
         return (
             <section id="contact">
-
-
                 <div className="row section-head">
                     <Fade left duration={1000}>
                         <div className="two columns header-col">
@@ -96,7 +94,7 @@ class Contact extends Component {
                         </aside>
                     </Fade>
                 </div>
-                <ParticlesBg type="lines" bg={true}/>
+                <ParticlesBg type="color" bg={true}/>
             </section>
         );
     }
