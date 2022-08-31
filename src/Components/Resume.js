@@ -65,12 +65,12 @@ class Resume extends Component {
             </div>);
         });
 
-        return (<section id="resume">
+        return (<section id="resume" style={{borderRadius: "2%"}}>
             <Fade bottom duration={1300}>
                 <div className="row work">
                     <div className="three columns header-col">
                         <h1>
-                            <span>Travail</span>
+                            <span>Expérience</span>
                         </h1>
                     </div>
 
@@ -82,7 +82,7 @@ class Resume extends Component {
                 <div className="row education">
                     <div className="three columns header-col">
                         <h1>
-                            <span>Ecole</span>
+                            <span>Formation</span>
                         </h1>
                     </div>
 
@@ -98,7 +98,7 @@ class Resume extends Component {
                 <Fade bottom duration={1300}>
                     <div className="three columns header-col">
                         <h1>
-                            <span>Stack Technique</span>
+                            <span>Projets</span>
                         </h1>
                     </div>
                 </Fade>
@@ -107,73 +107,73 @@ class Resume extends Component {
 
                     <Fade bottom duration={1300}>
                         <div className="nine columns main-col" style={{float: "right"}}>
-                            <h3>Language</h3>
-                            <div className="info" style={{display: "flex"}}>
-                                <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-                                    <FontAwesomeIcon icon={faPython}
-                                                     style={{
-                                                         color: "black", width: "12%", height: "25%", margin: "5%"
-                                                     }}/>
-                                    <p>Python</p>
-                                </div>
-                                <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-                                <FontAwesomeIcon icon={faJava}
-                                                 style={{
-                                                     color: "black", width: "12%", height: "25%", margin: "5%"
-                                                 }}/>
-                                    <p>Java</p>
-                                </div>
-                                <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-                                <FontAwesomeIcon icon={faJs}
-                                                 style={{
-                                                     color: "black", width: "12%", height: "25%", margin: "5%"
-                                                 }}/>
-                                    <p>JavaScript</p>
-                                </div>
-                            </div>
+                            <h3>Cooming soon...</h3>
+                             {/*<div className="info" style={{display: "flex"}}>*/}
+                                 {/*<div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>*/}
+                            {/*        <FontAwesomeIcon icon={faPython}*/}
+                            {/*                         style={{*/}
+                            {/*                             color: "black", width: "12%", height: "25%", margin: "5%"*/}
+                            {/*                         }}/>*/}
+                            {/*        <p>Python</p>*/}
+                            {/*    </div>*/}
+                            {/*    <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>*/}
+                            {/*    <FontAwesomeIcon icon={faJava}*/}
+                            {/*                     style={{*/}
+                            {/*                         color: "black", width: "12%", height: "25%", margin: "5%"*/}
+                            {/*                     }}/>*/}
+                            {/*        <p>Java</p>*/}
+                            {/*    </div>*/}
+                            {/*    <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>*/}
+                            {/*    <FontAwesomeIcon icon={faJs}*/}
+                            {/*                     style={{*/}
+                            {/*                         color: "black", width: "12%", height: "25%", margin: "5%"*/}
+                            {/*                     }}/>*/}
+                            {/*        <p>JavaScript</p>*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
                         </div>
                     </Fade>
 
-                    <Fade bottom duration={1300}>
-                        <div className="nine columns main-col" style={{float: "right"}}>
-                            <h3>Git</h3>
-                            <div className="info">
-                                <FontAwesomeIcon icon={faGitlab}
-                                                 style={{
-                                                     color: "black", width: "12%", height: "25%", margin: "5%"
-                                                 }}/>
-                                <FontAwesomeIcon icon={faGithub}
-                                                 style={{
-                                                     color: "black", width: "12%", height: "25%", margin: "5%"
-                                                 }}/>
-                            </div>
-                        </div>
-                    </Fade>
+                     {/*<Fade bottom duration={1300}>*/}
+                         {/*<div className="nine columns main-col" style={{float: "right"}}>*/}
+                             {/*<h3>Git</h3>*/}
+                             {/*<div className="info">*/}
+                                 {/*<FontAwesomeIcon icon={faGitlab}*/}
+                    {/*                             style={{*/}
+                    {/*                                 color: "black", width: "12%", height: "25%", margin: "5%"*/}
+                    {/*                             }}/>*/}
+                    {/*            <FontAwesomeIcon icon={faGithub}*/}
+                    {/*                             style={{*/}
+                    {/*                                 color: "black", width: "12%", height: "25%", margin: "5%"*/}
+                    {/*                             }}/>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</Fade>*/}
 
-                    <Fade bottom duration={1300}>
-                        <div className="nine columns main-col" style={{float: "right"}}>
-                            <h3>Base de données</h3>
-                            <div className="info">
-                                <ReactSVG src="/svg/mysql.svg" wrapper="span"/>
-                                <ReactSVG src="svg/sql-server.svg" wrapper="span"/>
-                            </div>
-                        </div>
-                    </Fade>
+                    {/*<Fade bottom duration={1300}>*/}
+                    {/*    <div className="nine columns main-col" style={{float: "right"}}>*/}
+                    {/*        <h3>Base de données</h3>*/}
+                    {/*        <div className="info">*/}
+                    {/*            <ReactSVG src="/svg/mysql.svg" wrapper="span"/>*/}
+                    {/*            <ReactSVG src="svg/sql-server.svg" wrapper="span"/>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</Fade>*/}
 
-                    <Fade bottom duration={1300}>
-                        <div className="nine columns main-col">
-                            <h3>Autre</h3>
-                            <div className="info">
-                                <FontAwesomeIcon icon={faDocker}
-                                                 style={{
-                                                     color: "black", width: "12%", height: "25%", margin: "5%"
-                                                 }}/>
-                                <ReactSVG src="/svg/postman.svg" wrapper="span"/>
-                                <ReactSVG src="/svg/tensorflow.svg" wrapper="span"/>
-                                <ReactSVG src="/svg/genesys.svg" wrapper="span"/>
-                            </div>
-                        </div>
-                    </Fade>
+                    {/*<Fade bottom duration={1300}>*/}
+                    {/*    <div className="nine columns main-col">*/}
+                    {/*        <h3>Autre</h3>*/}
+                    {/*        <div className="info">*/}
+                    {/*            <FontAwesomeIcon icon={faDocker}*/}
+                    {/*                             style={{*/}
+                    {/*                                 color: "black", width: "12%", height: "25%", margin: "5%"*/}
+                    {/*                             }}/>*/}
+                    {/*            <ReactSVG src="/svg/postman.svg" wrapper="span"/>*/}
+                    {/*            <ReactSVG src="/svg/tensorflow.svg" wrapper="span"/>*/}
+                    {/*            <ReactSVG src="/svg/genesys.svg" wrapper="span"/>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</Fade>*/}
 
                 </div>
             </div>

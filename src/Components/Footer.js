@@ -29,8 +29,8 @@ class Footer extends Component {
                     </Fade>
 
                     <div id="go-top">
-                        <a className="smoothscroll" title="Back to Top" href="#home">
-                            <i className="icon-up-open"/>
+                        <a className="smoothscroll" href="#home">
+                            <i className="icon-up-circle" style={{fontSize: "42px"}}/>
                         </a>
                     </div>
                 </div>

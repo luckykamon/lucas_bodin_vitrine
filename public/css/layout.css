@@ -18,6 +18,16 @@
 
 ===================================================================== */
 
+/* Me: */
+.profile-pic:hover {
+    /*transform: scale(3);*/
+}
+
+#contactMessage:focus, #contactSubject:focus {
+    background: grey;
+}
+
+
 /* ------------------------------------------------------------------ */
 /* a. General Styles
 /* ------------------------------------------------------------------ */
@@ -32,7 +42,7 @@ body {
 
 header {
     position: relative;
-    height: 800px;
+    /*height: 800px;*/
     min-height: 500px;
     width: 100%;
 
@@ -114,13 +124,13 @@ header .scrolldown a {
     bottom: 30px;
     left: 50%;
     margin-left: -29px;
-    color: #fff;
+    color: #525252;
     display: block;
     height: 42px;
     width: 42px;
     font-size: 42px;
     line-height: 42px;
-    color: #fff;
+    /*color: #fff;*/
     border-radius: 100%;
 
     -webkit-transition: all .3s ease-in-out;
@@ -130,7 +140,8 @@ header .scrolldown a {
 }
 
 header .scrolldown a:hover {
-    color: #0762f9;
+    color: white;
+    transform: scale(1.2);
 }
 
 /* primary navigation
@@ -970,7 +981,7 @@ call-to-action .button {
 }
 
 #contact a:hover, #contact a:focus {
-    color: #0762f9;
+    /*color: #0762f9;*/
 }
 
 #contact h1 {
@@ -1044,7 +1055,7 @@ call-to-action .button {
 #contact textarea:focus,
 #contact select:focus {
     color: #fff;
-    background-color: #0762f9;
+    /*background-color: #0762f9;*/
 }
 
 #contact button.submit {
@@ -1063,6 +1074,7 @@ call-to-action .button {
 #contact button.submit:hover {
     color: #0D0D0D;
     background: #fff;
+    transform: scale(1.15);
 }
 
 #contact span.required {
@@ -1204,7 +1216,7 @@ footer .social-links li:first-child {
     display: block;
     width: 60px;
     height: 60px;
-    background-color: #525252;
+    /*background-color: #525252;*/
 
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -1212,14 +1224,15 @@ footer .social-links li:first-child {
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 
-    color: #fff;
+    color: rgb(134, 134, 134);
     font-size: 21px;
     line-height: 60px;
     border-radius: 100%;
 }
 
 #go-top a:hover {
-    background-color: #0F9095;
+    color: white;
+    transform: scale(1.2);
 }
 
 

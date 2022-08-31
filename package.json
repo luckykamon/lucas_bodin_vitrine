@@ -24,6 +24,7 @@
     "ionicons": "^6.0.1",
     "jquery": "^3.6.0",
     "particles-bg": "^2.5.5",
+    "power-mode-input": "^1.0.3",
     "react": "^16.0.0",
     "react-add-to-calendar": "^0.1.5",
     "react-dom": "^16.0.0",

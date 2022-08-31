@@ -1,21 +1,24 @@
 import React, {Component} from "react";
 import {Fade} from "react-reveal";
 import ParticlesBg from "particles-bg";
+import PowerModeInput from "power-mode-input";
+import {useRef} from "react";
 
-class Contact extends Component {
-    render() {
-        if (!this.props.data) return null;
+const Contact = (props) => {
+    if (!props.data) return null;
 
-        const phone = this.props.data.phone;
-        const message = this.props.data.contactmessage;
+    const phone = props.data.phone;
+    const message = props.data.contactmessage;
 
-        const sendEmail = () => {
-            let subject = document.getElementById('contactSubject').value
-            let body = document.getElementById('contactMessage').value
-            window.open('mailto:lucas.bodin.contacter@gmail.com?subject=' + subject + '&body=' + body)
-        }
+    const sendEmail = () => {
+        // Le replace permet d'ajouter les sauts de ligne dans le message
+        let subject = document.getElementById('contactSubject').value.replace(/\n/g, "%0D%0A")
+        let body = document.getElementById('contactMessage').value.replace(/\n/g, "%0D%0A")
+        window.open('mailto:lucas.bodin.contacter@gmail.com?subject=' + subject + '&body=' + body)
+    }
 
-        return (
+    return (
+        <>
             <section id="contact">
                 <div className="row section-head">
                     <Fade left duration={1000}>
@@ -47,7 +50,9 @@ class Contact extends Component {
                                         size="35"
                                         id="contactSubject"
                                         name="contactSubject"
-                                        onChange={this.handleChange}
+                                        // onChange={handleChange}
+                                        // ref={this.inputElement}
+                                        style={{borderRadius: "10px"}}
                                     />
                                 </div>
                             </Fade>
@@ -62,6 +67,7 @@ class Contact extends Component {
                                         rows="15"
                                         id="contactMessage"
                                         name="contactMessage"
+                                        style={{borderRadius: "10px"}}
                                     />
                                 </div>
                             </Fade>
@@ -70,7 +76,8 @@ class Contact extends Component {
                                 <div>
                                     <button
                                         className="submit"
-                                        onClick={sendEmail}>Enoyer un mail
+                                        style={{borderRadius: "10px"}}
+                                        onClick={sendEmail}>Envoyer le mail
                                     </button>
                                     <span id="image-loader">
                                         <img alt="" src="images/loader.gif"/>
@@ -89,15 +96,25 @@ class Contact extends Component {
                                     <a href={"tel:" + phone}><span>{phone}</span></a>
                                 </p>
                             </div>
-
-
                         </aside>
                     </Fade>
                 </div>
                 <ParticlesBg type="color" bg={true}/>
             </section>
-        );
-    }
+        </>
+    );
 }
+
+// class Contact extends Component {
+//     componentDidMount() {
+//         PowerModeInput.make(this.inputElement.current);
+//     }
+//
+//     render() {
+//         this.inputElement = useRef();
+//
+//
+//     }
+// }
 
 export default Contact;
