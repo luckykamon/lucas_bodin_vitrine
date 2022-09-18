@@ -1,19 +1,6 @@
 import React, {Component} from "react";
 import Fade from "react-reveal";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-// import {faCoffee} from '@fortawesome/free-solid-svg-icons'
-import {
-    // faCss3Alt,
-    faDocker,
-    faGithub,
-    faGitlab,
-    // faHtml5,
-    faJava,
-    faJs,
-    // faPhp,
-    faPython
-} from '@fortawesome/free-brands-svg-icons'
-import {ReactSVG} from "react-svg";
+import {Parallax} from "react-scroll-parallax";
 
 // const ShowText = (props) => {
 //
@@ -65,119 +52,129 @@ class Resume extends Component {
             </div>);
         });
 
-        return (<section id="resume" style={{borderRadius: "2%"}}>
-            <Fade bottom duration={1300}>
-                <div className="row work">
-                    <div className="three columns header-col">
-                        <h1>
-                            <span>Expérience</span>
-                        </h1>
-                    </div>
+        return (
 
-                    <div className="nine columns main-col">{work}</div>
-                </div>
-            </Fade>
-
-            <Fade bottom duration={1300}>
-                <div className="row education">
-                    <div className="three columns header-col">
-                        <h1>
-                            <span>Formation</span>
-                        </h1>
-                    </div>
-
-                    <div className="nine columns main-col">
-                        <div className="row item">
-                            <div className="twelve columns">{education}</div>
-                        </div>
-                    </div>
-                </div>
-            </Fade>
-
-            <div className="row skill">
-                <Fade bottom duration={1300}>
-                    <div className="three columns header-col">
-                        <h1>
-                            <span>Projets</span>
-                        </h1>
-                    </div>
-                </Fade>
-
-                <div>
-
+            <section id="resume" style={{borderRadius: "30px"}}>
+                <Parallax speed={30}>
                     <Fade bottom duration={1300}>
-                        <div className="nine columns main-col" style={{float: "right"}}>
-                            <h3>Cooming soon...</h3>
-                             {/*<div className="info" style={{display: "flex"}}>*/}
-                                 {/*<div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>*/}
-                            {/*        <FontAwesomeIcon icon={faPython}*/}
-                            {/*                         style={{*/}
-                            {/*                             color: "black", width: "12%", height: "25%", margin: "5%"*/}
-                            {/*                         }}/>*/}
-                            {/*        <p>Python</p>*/}
-                            {/*    </div>*/}
-                            {/*    <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>*/}
-                            {/*    <FontAwesomeIcon icon={faJava}*/}
-                            {/*                     style={{*/}
-                            {/*                         color: "black", width: "12%", height: "25%", margin: "5%"*/}
-                            {/*                     }}/>*/}
-                            {/*        <p>Java</p>*/}
-                            {/*    </div>*/}
-                            {/*    <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>*/}
-                            {/*    <FontAwesomeIcon icon={faJs}*/}
-                            {/*                     style={{*/}
-                            {/*                         color: "black", width: "12%", height: "25%", margin: "5%"*/}
-                            {/*                     }}/>*/}
-                            {/*        <p>JavaScript</p>*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
+                        <div className="row work">
+                            <div className="three columns header-col">
+                                <h1>
+                                    <span>Expérience</span>
+                                </h1>
+                            </div>
+
+                            <div className="nine columns main-col">{work}</div>
                         </div>
                     </Fade>
 
-                     {/*<Fade bottom duration={1300}>*/}
-                         {/*<div className="nine columns main-col" style={{float: "right"}}>*/}
-                             {/*<h3>Git</h3>*/}
-                             {/*<div className="info">*/}
-                                 {/*<FontAwesomeIcon icon={faGitlab}*/}
-                    {/*                             style={{*/}
-                    {/*                                 color: "black", width: "12%", height: "25%", margin: "5%"*/}
-                    {/*                             }}/>*/}
-                    {/*            <FontAwesomeIcon icon={faGithub}*/}
-                    {/*                             style={{*/}
-                    {/*                                 color: "black", width: "12%", height: "25%", margin: "5%"*/}
-                    {/*                             }}/>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*</Fade>*/}
 
-                    {/*<Fade bottom duration={1300}>*/}
-                    {/*    <div className="nine columns main-col" style={{float: "right"}}>*/}
-                    {/*        <h3>Base de données</h3>*/}
-                    {/*        <div className="info">*/}
-                    {/*            <ReactSVG src="/svg/mysql.svg" wrapper="span"/>*/}
-                    {/*            <ReactSVG src="svg/sql-server.svg" wrapper="span"/>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*</Fade>*/}
+                    <Fade bottom duration={1300}>
+                        <div className="row education">
+                            <div className="three columns header-col">
+                                <h1>
+                                    <span>Formation</span>
+                                </h1>
+                            </div>
 
-                    {/*<Fade bottom duration={1300}>*/}
-                    {/*    <div className="nine columns main-col">*/}
-                    {/*        <h3>Autre</h3>*/}
-                    {/*        <div className="info">*/}
-                    {/*            <FontAwesomeIcon icon={faDocker}*/}
-                    {/*                             style={{*/}
-                    {/*                                 color: "black", width: "12%", height: "25%", margin: "5%"*/}
-                    {/*                             }}/>*/}
-                    {/*            <ReactSVG src="/svg/postman.svg" wrapper="span"/>*/}
-                    {/*            <ReactSVG src="/svg/tensorflow.svg" wrapper="span"/>*/}
-                    {/*            <ReactSVG src="/svg/genesys.svg" wrapper="span"/>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*</Fade>*/}
+                            <div className="nine columns main-col">
+                                <div className="row item">
+                                    <div className="twelve columns">{education}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </Fade>
 
-                </div>
-            </div>
-        </section>);
+                    <div className="row skill">
+                        <Fade bottom duration={1300}>
+                            <div className="three columns header-col">
+                                <h1>
+                                    <span>Projets</span>
+                                </h1>
+                            </div>
+                        </Fade>
+
+                        <div>
+
+                            <Fade bottom duration={1300}>
+                                <div className="nine columns main-col" style={{float: "right"}}>
+                                    <h3>Cooming soon...</h3>
+                                    {/*<Parallax speed={20}>*/}
+                                    {/*    <h1>Hello</h1>*/}
+                                    {/*</Parallax>*/}
+                                    {/*<div className="info" style={{display: "flex"}}>*/}
+                                    {/*<div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>*/}
+                                    {/*        <FontAwesomeIcon icon={faPython}*/}
+                                    {/*                         style={{*/}
+                                    {/*                             color: "black", width: "12%", height: "25%", margin: "5%"*/}
+                                    {/*                         }}/>*/}
+                                    {/*        <p>Python</p>*/}
+                                    {/*    </div>*/}
+                                    {/*    <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>*/}
+                                    {/*    <FontAwesomeIcon icon={faJava}*/}
+                                    {/*                     style={{*/}
+                                    {/*                         color: "black", width: "12%", height: "25%", margin: "5%"*/}
+                                    {/*                     }}/>*/}
+                                    {/*        <p>Java</p>*/}
+                                    {/*    </div>*/}
+                                    {/*    <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>*/}
+                                    {/*    <FontAwesomeIcon icon={faJs}*/}
+                                    {/*                     style={{*/}
+                                    {/*                         color: "black", width: "12%", height: "25%", margin: "5%"*/}
+                                    {/*                     }}/>*/}
+                                    {/*        <p>JavaScript</p>*/}
+                                    {/*    </div>*/}
+                                    {/*</div>*/}
+                                </div>
+                            </Fade>
+
+                            {/*<Fade bottom duration={1300}>*/}
+                            {/*<div className="nine columns main-col" style={{float: "right"}}>*/}
+                            {/*<h3>Git</h3>*/}
+                            {/*<div className="info">*/}
+                            {/*<FontAwesomeIcon icon={faGitlab}*/}
+                            {/*                             style={{*/}
+                            {/*                                 color: "black", width: "12%", height: "25%", margin: "5%"*/}
+                            {/*                             }}/>*/}
+                            {/*            <FontAwesomeIcon icon={faGithub}*/}
+                            {/*                             style={{*/}
+                            {/*                                 color: "black", width: "12%", height: "25%", margin: "5%"*/}
+                            {/*                             }}/>*/}
+                            {/*        </div>*/}
+                            {/*    </div>*/}
+                            {/*</Fade>*/}
+
+                            {/*<Fade bottom duration={1300}>*/}
+                            {/*    <div className="nine columns main-col" style={{float: "right"}}>*/}
+                            {/*        <h3>Base de données</h3>*/}
+                            {/*        <div className="info">*/}
+                            {/*            <ReactSVG src="/svg/mysql.svg" wrapper="span"/>*/}
+                            {/*            <ReactSVG src="svg/sql-server.svg" wrapper="span"/>*/}
+                            {/*        </div>*/}
+                            {/*    </div>*/}
+                            {/*</Fade>*/}
+
+                            {/*<Fade bottom duration={1300}>*/}
+                            {/*    <div className="nine columns main-col">*/}
+                            {/*        <h3>Autre</h3>*/}
+                            {/*        <div className="info">*/}
+                            {/*            <FontAwesomeIcon icon={faDocker}*/}
+                            {/*                             style={{*/}
+                            {/*                                 color: "black", width: "12%", height: "25%", margin: "5%"*/}
+                            {/*                             }}/>*/}
+                            {/*            <ReactSVG src="/svg/postman.svg" wrapper="span"/>*/}
+                            {/*            <ReactSVG src="/svg/tensorflow.svg" wrapper="span"/>*/}
+                            {/*            <ReactSVG src="/svg/genesys.svg" wrapper="span"/>*/}
+                            {/*        </div>*/}
+                            {/*    </div>*/}
+                            {/*</Fade>*/}
+
+                        </div>
+                    </div>
+                </Parallax>
+            </section>
+
+        );
     }
 }
 

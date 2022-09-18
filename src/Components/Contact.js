@@ -1,8 +1,6 @@
-import React, {Component} from "react";
+import React from "react";
 import {Fade} from "react-reveal";
 import ParticlesBg from "particles-bg";
-import PowerModeInput from "power-mode-input";
-import {useRef} from "react";
 
 const Contact = (props) => {
     if (!props.data) return null;
@@ -104,17 +102,5 @@ const Contact = (props) => {
         </>
     );
 }
-
-// class Contact extends Component {
-//     componentDidMount() {
-//         PowerModeInput.make(this.inputElement.current);
-//     }
-//
-//     render() {
-//         this.inputElement = useRef();
-//
-//
-//     }
-// }
 
 export default Contact;
