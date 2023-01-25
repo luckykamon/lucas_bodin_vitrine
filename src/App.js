@@ -74,6 +74,12 @@ const App = () => {
                     "technologies": "Scikit-Learn - Python",
                     "years": "2022",
                     "description": "A partir d'un dataset de produits et de tickets de caisse. Analyse et présentation de données notables. Création d'un modèle de recommandation de produits pour le supermarché."
+                },
+                {
+                    "name": "Cooming soon...",
+                    "technologies": "Python C C++ SQL PHP Java C# CSS HTML JavaScript Scala OCaml SageMath",
+                    "years": "2017 - 2023",
+                    "description": "Plusieurs projets personnels et professionnels à venir..."
                 }
             ],
             "skills": [
