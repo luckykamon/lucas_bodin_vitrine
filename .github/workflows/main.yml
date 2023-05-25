@@ -32,5 +32,4 @@ jobs:
           script: |
             cd /srv/lucasbodin
             npm i
-            pm2 delete lucasbodin
-            pm2 --name lucasbodin start npm -- start
+            npm run build
