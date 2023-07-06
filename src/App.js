@@ -83,7 +83,7 @@ const App = () => {
                     "url": "https://courir-a-plusieurs.site"
                 },
                 {
-                    "name": "Génération de qr code",
+                    "name": "Génération de Qr Code",
                     "technologies": "Spring Boot - Java",
                     "years": "2022-2023",
                     "description": "APIs qui renvoie une image de qr code à partir d'un texte. Interface web pour générer des qr codes à partir d'un texte. Option permettant de personnaliser le qr code (couleur et ajout de logo)",
