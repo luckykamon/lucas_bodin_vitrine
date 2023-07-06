@@ -37,15 +37,21 @@ const App = () => {
             "work": [
                 {
                     "company": "CGI",
-                    "title": "Consultant développeur junior ",
+                    "title": "Consultant développeur",
                     "years": "Septembre 2021 - Maintenant",
-                    "description": "Prédiction/Tendances de prix sur des produits pour Leboncoin Redirection de canaux vers l’agent le mieux adapté pour AG2R la mondiale Amélioration de performance de l’analyse de données pour Thales"
+                    "description": "Mise en place d'un SVI pour Clarins: Il s'agit de gérer le routage d'un client appelant par téléphone/mail/réseaux sociaux/sms/chatbot vers un agent téléphonique en passant par des questions auprès de l'appelant. Puis de la configuration des API avec les différents logiciel de notre agent téléphonique afin de récupérer, d'afficher les données et lancer des processus d'actions (retour d'un produit qui génère mail de livraison avec Mondial Relay par exemple). Amélioration de l'interface agent pour AG2R la Mondiale: Ajout de fonctionnalités afin d'améliorer l'environnement pour les agents tel que de nouvelles API avec différents logiciels externes, ajout de statistiques de performances pour les superviseurs et correction de bugs. Exécutions de scripts python sur les données clients afin de les mettre à jour. POC pour CFE (Caisse des Français de l'Etranger) pour intégrer un nouveau système d'appel: L'objectif était de vérifier si Microsoft Dynamics 365 customer service pouvait répondre au cahier des charges d'un logiciel de téléphonie en fin de licence déjà existant. 1 ans: Mise en place d'un système de gestions de contrats pour les clients de Thales: Développements de fonctionnalités en javascript et C#. Mise en place du déploiement automatique du code sur les différents environnements, de tests automatiques et vérification de la qualité de code."
+                },
+                {
+                    "company": "Eiko",
+                    "title": "Développeur bénévole",
+                    "years": "Juin 2022 - Septembre 2022",
+                    "description": "Conversion automatique du code pour le navigateur Safari prêt a être publié avec Xcode avec Jenkins. Déploiement automatique de l'API de l'extension sur le serveur. Participation de la mise en place de l'architecture de la seconde application pour le front. Déploiement automatique du front de cette seconde application."
                 },
                 {
                     "company": "Purecontrol",
                     "title": "Développeur web fullstack",
                     "years": "Janvier 2021 - Août 2021",
-                    "description": "Création de garde-fou sécurisant des stations d’épurations / piscines Amélioration de l’espace client préexistant, ajout de nouvelles fonctionnalités tel que l’ajout de documents, création de tutoriel..."
+                    "description": "Amélioration de l’espace client préexistant, ajout de nouvelles fonctionnalités tel que l’ajout de documents, création de tutoriel. Création de garde-fou sécurisant des stations d’épurations / piscines en utilisant de l'IA avec tensorflow."
                 }
             ],
             "education": [
@@ -70,10 +76,24 @@ const App = () => {
             ],
             "projects": [
                 {
+                    "name": "Défi Qr Code",
+                    "technologies": "NodeJs - Express - React",
+                    "years": "2021-2023",
+                    "description": "Course d'orientation qui s'est déroulée dans le parc des Gayeulles. Les participants doivent scanner des qr codes afin de gagner de trouver des indices. L'objectif est de scanner tout les qr code et de découvrir le mot caché.",
+                    "url": "https://courir-a-plusieurs.site"
+                },
+                {
+                    "name": "Génération de qr code",
+                    "technologies": "Spring Boot - Java",
+                    "years": "2022-2023",
+                    "description": "APIs qui renvoie une image de qr code à partir d'un texte. Interface web pour générer des qr codes à partir d'un texte. Option permettant de personnaliser le qr code (couleur et ajout de logo)",
+                    "url": "https://generateqrcode.lucasbodin.com"
+                },
+                {
                     "name": "Recommandation de produits de supermarchés",
                     "technologies": "Scikit-Learn - Python",
                     "years": "2022",
-                    "description": "A partir d'un dataset de produits et de tickets de caisse. Analyse et présentation de données notables. Création d'un modèle de recommandation de produits pour le supermarché."
+                    "description": "Analyse et présentation de données notables à partir d'un dataset de produits et de tickets de caisse. Création d'un modèle de recommandation de produits pour le supermarché"
                 },
                 {
                     "name": "Cooming soon...",

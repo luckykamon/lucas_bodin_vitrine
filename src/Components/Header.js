@@ -23,7 +23,7 @@ const Header = (props) => {
     }
 
     return (
-        <header id="home" style={{height: "100%"}}>
+        <header id="home">
             {/*<ParticlesBg type="color" bg={true}/>*/}
             <div id="nav-wrap">
                 <ul id="nav" className="nav" style={{fontSize: "15px"}}>
@@ -77,8 +77,8 @@ const Header = (props) => {
                         <h3>{description}.</h3>
                     </Fade>
                     <div style={{height: "2vh"}}/>
-                    {/*<br/> <br/>*/}
-                    <hr/>
+                    <br/> <br/>
+                    {/*<hr/>*/}
 
                     <Fade bottom duration={2000}>
                         <ul className="social">

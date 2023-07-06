@@ -37,6 +37,10 @@ e. Others
       HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/
 /* ------------------------------------------------------------------ */
 
+a.orange {
+    color: #fe6928 !important;
+}
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -173,7 +177,12 @@ h5 { font-size: 18px; line-height: 30px; }
 h6 { font-size: 14px; line-height: 30px; }
 .subheader { }
 
-p { margin: 0 0 30px 0; }
+div > p:last-child {
+    margin: 0 0 30px 0;
+}
+
+
+/*p { margin: 0 0 30px 0; }*/
 p img { margin: 0; }
 p.lead {
    font: 19px/36px 'opensans-light', sans-serif;
