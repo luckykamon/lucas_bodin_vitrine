@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import {Parallax} from "react-scroll-parallax";
 import MouseParticles from 'react-mouse-particles'
 
@@ -42,6 +42,20 @@ const Resume = ({data}) => {
     return (
         <section id="resume" style={{borderRadius: "30px", padding: 0}}>
             <Parallax speed={30}>
+                <div className="row education">
+                    <div className="three columns header-col">
+                        <h1>
+                            <span>Projets</span>
+                        </h1>
+                    </div>
+
+                    <div className="nine columns main-col">
+                        <div className="row item">
+                            <div className="twelve columns">{projects}</div>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="row work">
                     <div className="three columns header-col">
                         <h1>
@@ -66,24 +80,7 @@ const Resume = ({data}) => {
                         </div>
                     </div>
                 </div>
-
-                <div className="row education">
-                    <div className="three columns header-col">
-                        <h1>
-                            <span>Projets</span>
-                        </h1>
-                    </div>
-
-                    <div className="nine columns main-col">
-                        <div className="row item">
-                            <div className="twelve columns">{projects}</div>
-                        </div>
-                    </div>
-                    <MouseParticles g={1} color={["#ffffff", "#000000"]} cull="col,image-wrapper"/>
-                </div>
-
-
-            </Parallax>
+            </Parallax> <MouseParticles g={1} color={["#ffffff", "#000000"]} cull="col,image-wrapper"/>
 
         </section>
 

@@ -83,12 +83,12 @@ const Header = (props) => {
                     <ul className="social" style={{display: "flex", justifyContent: "center"}}>
                         <div className={"hoverGrow"}>
                             <a href={github} target="_blank" rel="noreferrer" className="button btn hover-grow"
-                               style={{borderRadius: "10px", color: "white", backgroundColor: "black"}}> <i
+                               style={{borderRadius: "10px", color: "black", backgroundColor: "white"}}> <i style={{marginRight :"5px", marginLeft: "5px"}}
                                 className="fa fa-github"/>Github </a>
                         </div>
                         <div className={"hoverGrow"}>
                             <a href={linkedin} target="_blank" rel="noreferrer" className="button btn hover-grow"
-                               style={{borderRadius: "10px", color: "white", backgroundColor: "black"}}> <i
+                               style={{borderRadius: "10px", color: "black", backgroundColor: "white"}}> <i style={{marginRight :"5px", marginLeft: "5px"}}
                                 className="fa fa-linkedin"/>Linkedin </a>
                         </div>
                     </ul>
