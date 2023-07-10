@@ -73,7 +73,7 @@ const Contact = (props) => {
                             <div className="widget widget_contact">
                                 <h4>Numéro de téléphone</h4>
                                 <p className="address">
-                                    <a href={"tel:" + phone}><div className={"hoverGrow"}><span>{phone}</span></div></a>
+                                    <a href={"tel:" + phone}><span className={"hoverGrow"}>{phone}</span></a>
                                 </p>
                             </div>
                         </aside>

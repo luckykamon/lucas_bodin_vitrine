@@ -9,7 +9,7 @@ const App = () => {
     const resumeData = {
         "main": {
             "name": "Lucas BODIN",
-            "description": "Développeur fullstack actuellement en alternance spécialisé en Intelligence Artificielle",
+            "description": "Déployant l'innovation en tant que DevOps, je maîtrise également l'art du développement fullstack.",
             "image": "profilepic.jpg",
             "bio": "Curieux par l'univers de l'informatique, j'ai vité été passionné et orienté vers ce domaine. Diplomé d'une licence de mathématiques fondamentales/recherche à l'Université de Rennes 1 et d'une licence d'informatique à Epitech, je poursuis actuellement mes études à Epitech en alternance à CGI. ",
             "contactmessage": "Pour toute demande, merci de m'envoyer un mail ou de me contacter directement par téléphone",

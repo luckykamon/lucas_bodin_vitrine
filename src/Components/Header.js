@@ -1,5 +1,31 @@
-import React from "react";
+import React, {useEffect, useState} from 'react';
 import Fade from "react-reveal";
+import './typingEffect.css'; // Assuming you put the CSS in a separate file
+
+const TypingEffect = ({text}) => {
+    const [currentText, setCurrentText] = useState(" ");
+    let index = 0;
+
+    useEffect(() => {
+        const typeEffect = () => {
+            setCurrentText((prevText) => prevText + text.charAt(index++));
+            if (index < text.length) {
+                setTimeout(typeEffect, Math.random() * 50 + 10);
+            }
+        };
+
+        if (document.readyState === 'complete') {
+            typeEffect();
+        } else {
+            window.addEventListener('load', () => setTimeout(() => {
+                typeEffect();
+            }, 500));
+            return () => window.removeEventListener('load', typeEffect);
+        }
+    }, [text]);
+
+    return <h3 id="type-effect">{currentText}</h3>;
+};
 
 
 const Header = (props) => {
@@ -50,9 +76,7 @@ const Header = (props) => {
                         </div>
                     </Fade>
                     <div style={{height: "6vh"}}/>
-                    <Fade bottom duration={1200}>
-                        <h3 className={"hoverGrow"}>{description}.</h3>
-                    </Fade>
+                    <Fade bottom duration={1200}> <TypingEffect text={description}/> </Fade>
                     <div style={{height: "2vh"}}/>
                     <br/> <br/> <Fade bottom duration={2000}>
                     <ul className="social" style={{display: "flex", justifyContent: "center"}}>
