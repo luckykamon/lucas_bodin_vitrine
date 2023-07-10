@@ -13,9 +13,9 @@ class Resume extends Component {
                 <p className="info">
                     {work.title} <span>&bull;</span> <em className="date">{work.years}</em>
                 </p>
-                <p>{work.description.split(". ").map((item, i) => {
+                {work.description.split(". ").map((item, i) => {
                     return (<p key={i}>{"• " + item + "."}</p>);
-                })}</p>
+                })}
             </div>);
         });
 
@@ -25,9 +25,9 @@ class Resume extends Component {
                 <p className="info">
                     {education.degree} <span>&bull;</span> <em className="date">{education.graduated}</em>
                 </p>
-                <p>{education.description.split(". ").map((item, i) => {
+                {education.description.split(". ").map((item, i) => {
                     return (<p key={i}>{"• " + item + "."}</p>);
-                })}</p>
+                })}
             </div>);
         });
 

@@ -963,10 +963,9 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #contact {
-    background: #191919;
-    padding-top: 111px;
-    padding-bottom: 102px;
-    color: #636363;
+    /*background: black;*/
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 
 #contact .section-head {
@@ -1048,7 +1047,7 @@ call-to-action .button {
     outline: none;
     font-size: 15px;
     line-height: 24px;
-    width: 65%;
+    width: 74%;
 }
 
 #contact input:focus,
@@ -1129,7 +1128,7 @@ call-to-action .button {
 
 #twitter li b a {
     font: 13px/36px 'opensans-regular', Sans-serif;
-    color: #474747 !important;
+    color: black !important;
     border: none;
 }
 
@@ -1141,7 +1140,7 @@ call-to-action .button {
 footer {
     padding-top: 48px;
     margin-bottom: 48px;
-    color: #303030;
+    color: black;
     font-size: 14px;
     text-align: center;
     position: relative;

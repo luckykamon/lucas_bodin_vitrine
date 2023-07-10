@@ -1,21 +1,8 @@
-import React, {useEffect, useRef} from "react";
+import React from "react";
 import {Fade} from "react-reveal";
 import ParticlesBg from "particles-bg";
-import PowerModeInput from "power-mode-input";
 
 const Contact = (props) => {
-
-    const inputRef = useRef();
-    const textareaRef = useRef();
-
-    useEffect(() => {
-        PowerModeInput.make(inputRef.current);
-        PowerModeInput.make(textareaRef.current);
-        // return () => {
-        //     PowerModeInput.destroy();
-        // };
-    }, []);
-
     if (!props.data) return null;
 
     const phone = props.data.phone;
@@ -28,11 +15,6 @@ const Contact = (props) => {
         window.open('mailto:lucas.bodin.contacter@gmail.com?subject=' + subject + '&body=' + body)
     }
 
-    // Taille de la fenêtre
-    let width = window.innerWidth;
-    let height = window.innerHeight;
-    console.log(width*height)
-
     return (
         <>
             <section id="contact">
@@ -43,12 +25,11 @@ const Contact = (props) => {
                                 <span>Contact</span>
                             </h1>
                         </div>
-                    </Fade>
-                    <Fade right duration={1000}>
-                        <div className="ten columns">
-                            <p className="lead">{message}</p>
-                        </div>
-                    </Fade>
+                    </Fade> <Fade right duration={1000}>
+                    <div className="ten columns">
+                        <p style={{color: "white"}}>{message}</p>
+                    </div>
+                </Fade>
                 </div>
 
                 <div className="row">
@@ -57,45 +38,26 @@ const Contact = (props) => {
                         <fieldset>
                             <Fade left duration={1000}>
                                 <div>
-                                    <label htmlFor="contactSubject">
-                                        Objet
-                                    </label>
-                                    <input
-                                        ref={inputRef}
-                                        type="text"
-                                        defaultValue=""
-                                        size="35"
-                                        id="contactSubject"
-                                        name="contactSubject"
-                                        // onChange={handleChange}
-                                        // ref={this.inputElement}
-                                        style={{borderRadius: "10px"}}
-                                    />
+                                    <label htmlFor="contactSubject">Objet</label> <input type="text" defaultValue=""
+                                                                                           size="35" id="contactSubject"
+                                                                                           name="contactSubject"// onChange={handleChange} // ref={this.inputElement}
+                                                                                           style={{borderRadius: "10px", backgroundColor: "#E8EBEB", color: "black"}}/>
                                 </div>
                             </Fade>
 
                             <Fade left duration={1000}>
                                 <div>
-                                    <label htmlFor="contactMessage">
-                                        Message
-                                    </label>
-                                    <textarea
-                                        ref={textareaRef}
-                                        cols="50"
-                                        rows="15"
-                                        id="contactMessage"
-                                        name="contactMessage"
-                                        style={{borderRadius: "10px"}}
-                                    />
+                                    <label htmlFor="contactMessage">Message</label> <textarea cols="50" rows="15"
+                                                                                                id="contactMessage"
+                                                                                                name="contactMessage"
+                                                                                                style={{borderRadius: "10px", backgroundColor: "#E8EBEB", color: "black"}}/>
                                 </div>
                             </Fade>
 
                             <Fade left duration={1000}>
-                                <div>
-                                    <button
-                                        className="submit"
-                                        style={{borderRadius: "10px"}}
-                                        onClick={sendEmail}>Envoyer le mail
+                                <div style={{textAlign: "center"}}>
+                                    <button className="submit" style={{borderRadius: "10px", backgroundColor: "#E8EBEB", color: "black"}}
+                                            onClick={sendEmail}>Envoyer le mail
                                     </button>
                                     <span id="image-loader">
                                         <img alt="" src="images/loader.gif"/>
@@ -111,13 +73,14 @@ const Contact = (props) => {
                             <div className="widget widget_contact">
                                 <h4>Numéro de téléphone</h4>
                                 <p className="address">
-                                    <a href={"tel:" + phone}><span>{phone}</span></a>
+                                    <a href={"tel:" + phone}><div className={"hoverGrow"}><span>{phone}</span></div></a>
                                 </p>
                             </div>
                         </aside>
                     </Fade>
                 </div>
-                <ParticlesBg type="cobweb" color="#ffffff" num={window.innerWidth * window.innerHeight / 5000} bg={true} />
+                <ParticlesBg type="cobweb" color="#ffffff" num={window.innerWidth * window.innerHeight / 5000}
+                             bg={true}/>
             </section>
         </>
     );

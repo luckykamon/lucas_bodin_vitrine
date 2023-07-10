@@ -25,7 +25,7 @@ const Footer = (props) => {
         return (
             <li key={network.name}>
                 <a href={network.url} target="_blank" rel="noreferrer">
-                    <i className={network.className}/>
+                    <i className={network.className + " hoverGrow"}/>
                 </a>
             </li>
         );
@@ -36,15 +36,13 @@ const Footer = (props) => {
             <div className="row">
                 <Fade bottom>
                     <div className="twelve columns">
-                        <ul className="social-links">{networks}</ul>
-
+                        {/*<ul className="social-links">{networks}</ul>*/}
                         <ul className="copyright">
-                            <li>Copyright &copy; 2022 Lucas Bodin &bull; <a href="/confidentialite">Politique de
+                            <li style={{color: "white"}}>Copyright &copy; 2022 - 2023 &bull; <a href="https://www.linkedin.com/in/lucasbodin/" style={{color: "white"}}>Lucas Bodin</a> &bull; <a href="/confidentialite" style={{color: "white"}}>Politique de
                                 confidentialité</a></li>
                         </ul>
                     </div>
                 </Fade>
-
                 <div id="go-top">
                     <a className="smoothscroll" href="#home">
                         <i className="icon-up-circle" style={{fontSize: "42px"}}/>
@@ -53,7 +51,6 @@ const Footer = (props) => {
             </div>
         </footer>
     );
-
 }
 
 export default Footer;
