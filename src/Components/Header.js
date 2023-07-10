@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import Fade from "react-reveal";
-import './typingEffect.css'; // Assuming you put the CSS in a separate file
+// import './typingEffect.css'; // Assuming you put the CSS in a separate file
 
-const TypingEffect = ({text}) => {
+const TypingEffect = ({ text, tag = 'h3' }) => {
     const [currentText, setCurrentText] = useState(" ");
     let index = 0;
 
@@ -24,8 +24,9 @@ const TypingEffect = ({text}) => {
         }
     }, [text]);
 
-    return <h3 id="type-effect">{currentText}</h3>;
+    return React.createElement(tag, { className: 'type-effect' }, currentText);
 };
+
 
 
 const Header = (props) => {
@@ -104,3 +105,5 @@ const Header = (props) => {
 }
 
 export default Header;
+
+export {TypingEffect};

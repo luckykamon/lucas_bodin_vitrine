@@ -1,11 +1,11 @@
-#type-effect {
+.type-effect {
     border-right: 2px solid;
     white-space: normal;
     overflow: hidden;
     animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
 }
 
-#type-effect:after {
+.type-effect:after {
     content: '|';
     animation: blink 1s infinite;
 }

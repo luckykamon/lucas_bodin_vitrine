@@ -9,7 +9,6 @@ const Contact = (props) => {
     const message = props.data.contactmessage;
 
     const sendEmail = () => {
-        // Le replace permet d'ajouter les sauts de ligne dans le message
         let subject = document.getElementById('contactSubject').value.replace(/\n/g, "%0D%0A")
         let body = document.getElementById('contactMessage').value.replace(/\n/g, "%0D%0A")
         window.open('mailto:lucas.bodin.contacter@gmail.com?subject=' + subject + '&body=' + body)
@@ -33,7 +32,6 @@ const Contact = (props) => {
                 </div>
 
                 <div className="row">
-                    {/*<Fade left duration={1000}>*/}
                     <div className="eight columns">
                         <fieldset>
                             <Fade left duration={1000}>
@@ -66,7 +64,6 @@ const Contact = (props) => {
                             </Fade>
                         </fieldset>
                     </div>
-                    {/*</Fade>*/}
 
                     <Fade right duration={1000}>
                         <aside className="four columns footer-widgets">
