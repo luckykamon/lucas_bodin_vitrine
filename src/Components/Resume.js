@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {Parallax} from "react-scroll-parallax";
+import MouseParticles from 'react-mouse-particles'
 
 class Resume extends Component {
 
@@ -83,10 +84,12 @@ class Resume extends Component {
                                 <div className="twelve columns">{projects}</div>
                             </div>
                         </div>
+                        <MouseParticles g={1} color={["#ffffff","#000000"]} cull="col,image-wrapper"/>
                     </div>
 
 
                 </Parallax>
+
             </section>
 
         );

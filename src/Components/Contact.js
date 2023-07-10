@@ -1,8 +1,21 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import {Fade} from "react-reveal";
 import ParticlesBg from "particles-bg";
+import PowerModeInput from "power-mode-input";
 
 const Contact = (props) => {
+
+    const inputRef = useRef();
+    const textareaRef = useRef();
+
+    useEffect(() => {
+        PowerModeInput.make(inputRef.current);
+        PowerModeInput.make(textareaRef.current);
+        // return () => {
+        //     PowerModeInput.destroy();
+        // };
+    }, []);
+
     if (!props.data) return null;
 
     const phone = props.data.phone;
@@ -14,6 +27,11 @@ const Contact = (props) => {
         let body = document.getElementById('contactMessage').value.replace(/\n/g, "%0D%0A")
         window.open('mailto:lucas.bodin.contacter@gmail.com?subject=' + subject + '&body=' + body)
     }
+
+    // Taille de la fenêtre
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    console.log(width*height)
 
     return (
         <>
@@ -43,6 +61,7 @@ const Contact = (props) => {
                                         Objet
                                     </label>
                                     <input
+                                        ref={inputRef}
                                         type="text"
                                         defaultValue=""
                                         size="35"
@@ -61,6 +80,7 @@ const Contact = (props) => {
                                         Message
                                     </label>
                                     <textarea
+                                        ref={textareaRef}
                                         cols="50"
                                         rows="15"
                                         id="contactMessage"
@@ -97,7 +117,7 @@ const Contact = (props) => {
                         </aside>
                     </Fade>
                 </div>
-                <ParticlesBg type="color" bg={true}/>
+                <ParticlesBg type="cobweb" color="#ffffff" num={window.innerWidth * window.innerHeight / 5000} bg={true} />
             </section>
         </>
     );
