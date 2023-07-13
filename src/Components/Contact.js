@@ -13,36 +13,47 @@ const Contact = (props) => {
         window.open('mailto:lucas.bodin.contacter@gmail.com?subject=' + subject + '&body=' + body)
     }
 
+    // Display flex if screen width is less than 768px
+    if (window.innerWidth < 768) {
+
+    }
+
     return (
         <>
             <section id="contact">
-                <div className="row section-head">
+                <div className="row section-head" style={{display: window.innerWidth >= 768 ? "flex" : "block", alignItems: "center"}}>
                     <Fade left duration={1000}>
-                        <div className="two columns header-col">
+                        <div className="two columns header-col" style={{width: "26%"}}>
                             <h1>
                                 <span>Contact</span>
                             </h1>
                         </div>
                     </Fade> <Fade right duration={1000}>
-                    <div className="ten columns">
-                        <p style={{color: "white", textAlign: "center"}}>{message}</p>
+                    <div style={{width: "100%"}}>
+                        <div style={{color: "white", textAlign: "center"}}>{message}</div>
                     </div>
                 </Fade>
                 </div>
 
                 <div className="row">
                     <div className="columns" style={{width: "100%"}}>
-
                         <div>
-                            <Fade left duration={1000}><label htmlFor="contactSubject">Objet</label></Fade>
-                            <Fade right duration={1000}><input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" style={{borderRadius: "10px", backgroundColor: "#E8EBEB", color: "black"}}/> </Fade>
+                            <Fade left duration={1000}><label htmlFor="contactSubject">Objet</label></Fade> <Fade right
+                                                                                                                  duration={1000}><input
+                            type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject"
+                            style={{borderRadius: "10px", backgroundColor: "#E8EBEB", color: "black"}}/> </Fade>
                         </div>
 
 
-                            <div>
-                                <Fade left duration={1000}><label htmlFor="contactMessage">Message</label></Fade>
-                                <Fade right duration={1000}><textarea cols="50" rows="15" id="contactMessage" name="contactMessage" style={{borderRadius: "10px", backgroundColor: "#E8EBEB", color: "black"}}/></Fade>
-                            </div>
+                        <div>
+                            <Fade left duration={1000}><label htmlFor="contactMessage">Message</label></Fade> <Fade
+                            right duration={1000}><textarea cols="50" rows="15" id="contactMessage"
+                                                            name="contactMessage" style={{
+                            borderRadius: "10px",
+                            backgroundColor: "#E8EBEB",
+                            color: "black"
+                        }}/></Fade>
+                        </div>
 
                         <Fade left duration={1000}>
                             <div style={{textAlign: "center"}}>

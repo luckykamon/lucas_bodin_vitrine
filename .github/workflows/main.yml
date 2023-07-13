@@ -31,5 +31,5 @@ jobs:
           password: ${{ secrets.PASSWORD_LWS_SERVER }}
           script: |
             cd /srv/lucasbodin
-            npm i
+            npm ci
             npm run build
