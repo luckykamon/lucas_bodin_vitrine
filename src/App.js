@@ -12,7 +12,7 @@ const App = () => {
             "description": "Déployant l'innovation en tant que DevOps, je maîtrise également l'art du développement fullstack.",
             "image": "profilepic.jpg",
             "email": "lucas.bodin.contacter@gmail.com",
-            "phone": "+33 6 59 35 01 42",
+            "contactmessage": "Pour toute demande, merci de m'envoyer un mail.",
             "github": "https://github.com/luckykamon",
             "linkedin": "https://www.linkedin.com/in/lucasbodin/",
             "website": "lucasbodin.com",
