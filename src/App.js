@@ -107,7 +107,7 @@ const App = () => {
             <Header data={resumeData.main}/>
             <Resume data={resumeData.resume}/>
             <Contact data={resumeData.main}/>
-            <Footer data={resumeData.main}/>
+            <Footer top data={resumeData.main}/>
         </div>
     );
 

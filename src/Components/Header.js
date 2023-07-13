@@ -26,6 +26,24 @@ const TypingEffect = ({text, tag = 'h3'}) => {
     return React.createElement(tag, {className: 'type-effect'}, currentText);
 };
 
+export const Navbar = ({isHomePage}) => {
+    return (
+        <div id="nav-wrap">
+            <ul id="nav" className="nav" style={{fontSize: "15px"}}>
+                <li className="current">
+                    <a className={isHomePage ? "smoothscroll" : ""} href="/#home"> Accueil </a>
+                </li>
+                <li>
+                    <a className={isHomePage ? "smoothscroll" : ""} href="/#resume"> Résumé </a>
+                </li>
+                <li>
+                    <a className={isHomePage ? "smoothscroll" : ""} href="/#contact"> Contact </a>
+                </li>
+            </ul>
+        </div>
+    )
+}
+
 
 const Header = (props) => {
     let github
@@ -49,19 +67,8 @@ const Header = (props) => {
 
     return (
         <header id="home">
-            <div id="nav-wrap">
-                <ul id="nav" className="nav" style={{fontSize: "15px"}}>
-                    <li className="current">
-                        <a className="smoothscroll" href="#home"> Accueil </a>
-                    </li>
-                    <li>
-                        <a className="smoothscroll" href="#resume"> Résumé </a>
-                    </li>
-                    <li>
-                        <a className="smoothscroll" href="#contact"> Contact </a>
-                    </li>
-                </ul>
-            </div>
+
+            <Navbar isHomePage/>
 
             <div className="row banner">
                 <div className="banner-text">

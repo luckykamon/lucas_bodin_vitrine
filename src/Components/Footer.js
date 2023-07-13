@@ -2,7 +2,7 @@ import React from "react";
 import Fade from "react-reveal";
 
 
-const Footer = () => {
+const Footer = ({top}) => {
 
     return (
         <footer>
@@ -16,11 +16,14 @@ const Footer = () => {
                         </ul>
                     </div>
                 </Fade>
-                <div id="go-top">
-                    <a className="smoothscroll" href="#home">
-                        <i className="icon-up-circle" style={{fontSize: "42px"}}/>
-                    </a>
-                </div>
+                {top && (
+                    <div id="go-top">
+                        <a className="smoothscroll" href="#home">
+                            <i className="icon-up-circle" style={{fontSize: "42px"}}/>
+                        </a>
+                    </div>
+                )}
+
             </div>
         </footer>
     );
