@@ -2,34 +2,7 @@ import React from "react";
 import Fade from "react-reveal";
 
 
-const Footer = (props) => {
-    let social;
-    if (!props.data) {
-        social =[
-            {
-                "name":"",
-                "url":"/",
-                "className":""
-            },
-            {
-                "name":"",
-                "url":"/",
-                "className":""
-            }
-        ]
-    } else {
-        social = props.data.social;
-    }
-
-    const networks = social.map(function (network) {
-        return (
-            <li key={network.name}>
-                <a href={network.url} target="_blank" rel="noreferrer">
-                    <i className={network.className + " hoverGrow"}/>
-                </a>
-            </li>
-        );
-    });
+const Footer = () => {
 
     return (
         <footer>

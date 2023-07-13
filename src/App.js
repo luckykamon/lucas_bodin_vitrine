@@ -11,14 +11,11 @@ const App = () => {
             "name": "Lucas BODIN",
             "description": "Déployant l'innovation en tant que DevOps, je maîtrise également l'art du développement fullstack.",
             "image": "profilepic.jpg",
-            "bio": "Curieux par l'univers de l'informatique, j'ai vité été passionné et orienté vers ce domaine. Diplomé d'une licence de mathématiques fondamentales/recherche à l'Université de Rennes 1 et d'une licence d'informatique à Epitech, je poursuis actuellement mes études à Epitech en alternance à CGI. ",
-            "contactmessage": "Pour toute demande, merci de m'envoyer un mail ou de me contacter directement par téléphone",
             "email": "lucas.bodin.contacter@gmail.com",
             "phone": "+33 6 59 35 01 42",
             "github": "https://github.com/luckykamon",
             "linkedin": "https://www.linkedin.com/in/lucasbodin/",
             "website": "lucasbodin.com",
-            "resumedownload": "/pdf/cv_lucas_bodin.pdf",
             "social": [
                 {
                     "name": "github",
@@ -100,24 +97,6 @@ const App = () => {
                     "technologies": "Python C C++ SQL PHP Java C# CSS HTML JavaScript Scala OCaml SageMath",
                     "years": "2017 - 2023",
                     "description": "Plusieurs projets personnels et professionnels à venir..."
-                }
-            ],
-            "skills": [
-                {
-                    "name": "Python",
-                    "icon": "faPython"
-                },
-                {
-                    "name": "ReactJs"
-                },
-                {
-                    "name": "CSS"
-                },
-                {
-                    "name": "PHP"
-                },
-                {
-                    "name": "JAVA"
                 }
             ]
         }

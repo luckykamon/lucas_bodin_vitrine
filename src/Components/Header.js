@@ -1,12 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import Fade from "react-reveal";
-// import './typingEffect.css'; // Assuming you put the CSS in a separate file
 
-const TypingEffect = ({ text, tag = 'h3' }) => {
+const TypingEffect = ({text, tag = 'h3'}) => {
     const [currentText, setCurrentText] = useState(" ");
-    let index = 0;
 
     useEffect(() => {
+        let index = 0;
         const typeEffect = () => {
             setCurrentText((prevText) => prevText + text.charAt(index++));
             if (index < text.length) {
@@ -24,9 +23,8 @@ const TypingEffect = ({ text, tag = 'h3' }) => {
         }
     }, [text]);
 
-    return React.createElement(tag, { className: 'type-effect' }, currentText);
+    return React.createElement(tag, {className: 'type-effect'}, currentText);
 };
-
 
 
 const Header = (props) => {
@@ -83,13 +81,15 @@ const Header = (props) => {
                     <ul className="social" style={{display: "flex", justifyContent: "center"}}>
                         <div className={"hoverGrow"}>
                             <a href={github} target="_blank" rel="noreferrer" className="button btn hover-grow"
-                               style={{borderRadius: "10px", color: "black", backgroundColor: "white"}}> <i style={{marginRight :"5px", marginLeft: "5px"}}
-                                className="fa fa-github"/>Github </a>
+                               style={{borderRadius: "10px", color: "black", backgroundColor: "white"}}> <i
+                                style={{marginRight: "5px", marginLeft: "5px"}} className="fa fa-github"/>Github </a>
                         </div>
+
                         <div className={"hoverGrow"}>
                             <a href={linkedin} target="_blank" rel="noreferrer" className="button btn hover-grow"
-                               style={{borderRadius: "10px", color: "black", backgroundColor: "white"}}> <i style={{marginRight :"5px", marginLeft: "5px"}}
-                                className="fa fa-linkedin"/>Linkedin </a>
+                               style={{borderRadius: "10px", color: "black", backgroundColor: "white"}}> <i
+                                style={{marginRight: "5px", marginLeft: "5px"}} className="fa fa-linkedin"/>Linkedin
+                            </a>
                         </div>
                     </ul>
                 </Fade>
