@@ -1,6 +1,5 @@
 import React from "react";
 import {Parallax} from "react-scroll-parallax";
-import MouseParticles from 'react-mouse-particles'
 
 const Resume = ({data}) => {
     if (!data) return null;
@@ -37,7 +36,7 @@ const Resume = ({data}) => {
             return (<p key={i}>{"• " + item + "."}</p>);
         })}
         </div>);
-    })
+    });
 
     return (
         <section id="resume" style={{borderRadius: "30px", padding: 0}}>
@@ -80,12 +79,11 @@ const Resume = ({data}) => {
                         </div>
                     </div>
                 </div>
-            </Parallax> <MouseParticles g={1} color={["#ffffff", "#000000"]} cull="col,image-wrapper"/>
+            </Parallax>
 
         </section>
 
     );
-}
-
+};
 
 export default Resume;

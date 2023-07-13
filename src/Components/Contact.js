@@ -1,6 +1,5 @@
 import React from "react";
 import {Fade} from "react-reveal";
-import ParticlesBg from "particles-bg";
 
 const Contact = (props) => {
     if (!props.data) return null;
@@ -8,10 +7,10 @@ const Contact = (props) => {
     const message = props.data.contactmessage;
 
     const sendEmail = () => {
-        let subject = document.getElementById('contactSubject').value.replace(/\n/g, "%0D%0A")
-        let body = document.getElementById('contactMessage').value.replace(/\n/g, "%0D%0A")
-        window.open('mailto:lucas.bodin.contacter@gmail.com?subject=' + subject + '&body=' + body)
-    }
+        let subject = document.getElementById("contactSubject").value.replace(/\n/g, "%0D%0A");
+        let body = document.getElementById("contactMessage").value.replace(/\n/g, "%0D%0A");
+        window.open("mailto:lucas.bodin.contacter@gmail.com?subject=" + subject + "&body=" + body);
+    };
 
     // Display flex if screen width is less than 768px
     if (window.innerWidth < 768) {
@@ -21,7 +20,8 @@ const Contact = (props) => {
     return (
         <>
             <section id="contact">
-                <div className="row section-head" style={{display: window.innerWidth >= 768 ? "flex" : "block", alignItems: "center"}}>
+                <div className="row section-head"
+                     style={{display: window.innerWidth >= 768 ? "flex" : "block", alignItems: "center"}}>
                     <Fade left duration={1000}>
                         <div className="two columns header-col" style={{width: "26%"}}>
                             <h1>
@@ -66,11 +66,10 @@ const Contact = (props) => {
                     </div>
 
                 </div>
-                <ParticlesBg type="cobweb" color="#ffffff" num={window.innerWidth * window.innerHeight / 5000}
-                             bg={true}/>
+
             </section>
         </>
     );
-}
+};
 
 export default Contact;

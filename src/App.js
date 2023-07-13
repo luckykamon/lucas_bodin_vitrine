@@ -1,4 +1,4 @@
-import React, {} from "react";
+import React from "react";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Resume from "./Components/Resume";
@@ -100,17 +100,16 @@ const App = () => {
                 }
             ]
         }
-    }
+    };
 
     return (
         <div className="App">
-            <Header data={resumeData.main}/>
-            <Resume data={resumeData.resume}/>
-            <Contact data={resumeData.main}/>
+            <Header data={resumeData.main}/> <Resume data={resumeData.resume}/> <Contact data={resumeData.main}/>
             <Footer top data={resumeData.main}/>
+
         </div>
     );
 
-}
+};
 
 export default App;
