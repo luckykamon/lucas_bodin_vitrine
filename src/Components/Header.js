@@ -91,7 +91,7 @@ export const Navbar = ({isHomePage}) => {
                     const sectionHeight = section.offsetHeight;
 
                     let scrollUpSection = Math.abs(sectionTop - window.pageYOffset);
-                    if (minScrollUp === null || (sectionTop !== 0 && minScrollUp > scrollUpSection && window.pageYOffset > sectionTop)) {
+                    if (minScrollUp === null || (sectionTop !== 0 && minScrollUp > scrollUpSection && window.pageYOffset > sectionTop - 32)) { // 32 = hauteur de la navbar en px
                         minScrollUp = scrollUpSection;
                         active_section_navbar = section;
                     }

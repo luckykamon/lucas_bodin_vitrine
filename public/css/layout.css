@@ -166,23 +166,47 @@ header .scrolldown a:hover {
     top: 0;
 }
 
-.opaque > ul > li {
-    background-color: black;
+#nav-wrap.opaque > ul > li {
+    animation: fadeInOpacity 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 1);
 }
 
-.opaque > ul > li:first-child {
+@keyframes fadeInOpacity {
+    0% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 1);
+    }
+}
+
+#nav-wrap:not(.opaque) > ul > li {
+    animation: fadeOutOpacity 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes fadeOutOpacity {
+    0% {
+        background-color: rgba(0, 0, 0, 1);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+#nav-wrap > ul > li:first-child {
     border-top-left-radius: 30px;
 }
 
-.opaque > ul > li:first-child {
+#nav-wrap > ul > li:first-child {
     border-bottom-left-radius: 30px;
 }
 
-.opaque > ul > li:last-child {
+#nav-wrap > ul > li:last-child {
     border-top-right-radius: 30px;
 }
 
-.opaque > ul > li:last-child {
+#nav-wrap > ul > li:last-child {
     border-bottom-right-radius: 30px;
 }
 
