@@ -42,8 +42,7 @@ body {
 
 header {
     position: relative;
-    /*height: 800px;*/
-    height: 100vh;
+    height: calc(max(100vh, 574px));
     width: 100%;
 
     text-align: center;
