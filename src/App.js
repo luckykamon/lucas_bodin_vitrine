@@ -9,7 +9,7 @@ const App = () => {
     const resumeData = {
         "main": {
             "name": "Lucas BODIN",
-            "description": "Déployant l'innovation en tant que DevOps, je maîtrise également l'art du développement fullstack.",
+            "description": "Déployant l'innovation en tant que développeur Full Stack, je suis spécialisé en DevOps.",
             "image": "profilepic.jpg",
             "email": "lucas.bodin.contacter@gmail.com",
             "contactmessage": "Pour toute demande de collaboration professionnelle, merci de m'envoyer un mail.",
