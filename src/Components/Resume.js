@@ -9,7 +9,7 @@ const Resume = ({data}) => {
             <h3>{work.company}</h3>
             <p className="info">
                 {work.title} <span>&bull;</span> <em className="date">{work.years}</em>
-            </p>{work.description.split(". ").map((item, i) => {
+            </p>{work.description && work.description.split(". ").map((item, i) => {
             return (<p key={i}>{"• " + item + "."}</p>);
         })}
         </div>);

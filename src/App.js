@@ -33,9 +33,14 @@ const App = () => {
             "skillmessage": "Expérience dans les compétences",
             "work": [
                 {
+                    "company": "Agap2",
+                    "title": "Développeur Full Stack",
+                    "years": "Août 2023 - Maintenant",
+                },
+                {
                     "company": "CGI",
                     "title": "Consultant développeur",
-                    "years": "Septembre 2021 - Maintenant",
+                    "years": "Septembre 2021 - Juillet 2023",
                     "description": "Mise en place d'un SVI pour Clarins: Il s'agit de gérer le routage d'un client appelant par téléphone/mail/réseaux sociaux/sms/chatbot vers un agent téléphonique en passant par des questions auprès de l'appelant. Puis de la configuration des API avec les différents logiciel de notre agent téléphonique afin de récupérer, d'afficher les données et lancer des processus d'actions (retour d'un produit qui génère mail de livraison avec Mondial Relay par exemple). Amélioration de l'interface agent pour AG2R la Mondiale: Ajout de fonctionnalités afin d'améliorer l'environnement pour les agents tel que de nouvelles API avec différents logiciels externes, ajout de statistiques de performances pour les superviseurs et correction de bugs. Exécutions de scripts python sur les données clients afin de les mettre à jour. POC pour CFE (Caisse des Français de l'Etranger) pour intégrer un nouveau système d'appel: L'objectif était de vérifier si Microsoft Dynamics 365 customer service pouvait répondre au cahier des charges d'un logiciel de téléphonie en fin de licence déjà existant. 1 ans: Mise en place d'un système de gestions de contrats pour les clients de Thales: Développements de fonctionnalités en javascript et C#. Mise en place du déploiement automatique du code sur les différents environnements, de tests automatiques et vérification de la qualité de code."
                 },
                 {
@@ -46,7 +51,7 @@ const App = () => {
                 },
                 {
                     "company": "Purecontrol",
-                    "title": "Développeur web fullstack",
+                    "title": "Développeur Full Stack",
                     "years": "Janvier 2021 - Août 2021",
                     "description": "Amélioration de l’espace client préexistant, ajout de nouvelles fonctionnalités tel que l’ajout de documents, création de tutoriel. Création de garde-fou sécurisant des stations d’épurations / piscines en utilisant de l'IA avec tensorflow."
                 }
