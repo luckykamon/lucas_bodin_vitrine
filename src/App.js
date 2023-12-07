@@ -9,7 +9,7 @@ const App = () => {
     const resumeData = {
         "main": {
             "name": "Lucas BODIN",
-            "description": "Déployant l'innovation en tant que développeur Full Stack, je suis spécialisé en DevOps.",
+            "description": "DevOps Developer.",
             "image": "profilepic.jpg",
             "email": "lucas.bodin.contacter@gmail.com",
             "contactmessage": "Pour toute demande de collaboration professionnelle, merci de m'envoyer un mail.",
@@ -34,8 +34,9 @@ const App = () => {
             "work": [
                 {
                     "company": "Agap2",
-                    "title": "Développeur Full Stack",
+                    "title": "DevOps Developer",
                     "years": "Août 2023 - Maintenant",
+                    "description": "Mission au sein du groupe Pichet Immobilier"
                 },
                 {
                     "company": "CGI",
