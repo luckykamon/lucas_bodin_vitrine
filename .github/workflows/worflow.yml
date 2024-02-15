@@ -2,7 +2,9 @@ name: Deploy Node.js app to server
 
 on:
   push:
-  workflow_dispatch:
+    branches:
+      - master
+      - main
 
 jobs:
   deploy:
