@@ -44,7 +44,7 @@ const App = () => {
                     "technologies": "NodeJs - Express - React",
                     "years": "2021-2024",
                     "description": "Les participants doivent scanner des qr codes afin de gagner de trouver des indices. L'objectif est de scanner tout les qr code et de découvrir le mot caché. 2 éditions de course d'orientation se sont déroulée dans le parc des Gayeulles à l'occasion de l'anniversaire du groupe facebook Courir à Plusieurs. Refonte de l'UI/UX lorsque Swim Workout aboutira",
-                    "url": "https://courir-a-plusieurs.site"
+                    "url": "https://defiqrcode.lucasbodin.com/"
                 },
                 {
                     "name": "Génération de Qr Code",
