@@ -10,7 +10,7 @@ const Footer = ({top}) => {
                     <div className="twelve columns">
                         {/*<ul className="social-links">{networks}</ul>*/}
                         <ul className="copyright">
-                            <li style={{color: "white"}}>Copyright &copy; 2022 - 2023 &bull; <a
+                            <li style={{color: "white"}}>Copyright &copy; 2022 - 2024 &bull; <a
                                 href="https://www.linkedin.com/in/lucasbodin/" style={{color: "white"}}>Lucas
                                 Bodin</a> &bull; <a href="/confidentialite" style={{color: "white"}}>Politique de
                                 confidentialité</a></li>
