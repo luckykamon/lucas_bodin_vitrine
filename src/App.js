@@ -43,7 +43,7 @@ const App = () => {
                     "name": "Défi Qr Code",
                     "technologies": "NodeJs - Express - React",
                     "years": "2021-2024",
-                    "description": "Les participants doivent scanner des qr codes afin de gagner de trouver des indices. L'objectif est de scanner tout les qr code et de découvrir le mot caché. 2 éditions de course d'orientation se sont déroulée dans le parc des Gayeulles à l'occasion de l'anniversaire du groupe facebook Courir à Plusieurs. Refonte de l'UI/UX lorsque Swim Workout aboutira",
+                    "description": "Les participants doivent scanner des qr codes afin de gagner de trouver des indices. L'objectif est de scanner tout les qr code et de découvrir le mot caché. 3 éditions de course d'orientation se sont déroulée dans le parc des Gayeulles à l'occasion de l'anniversaire du groupe facebook Courir à Plusieurs. Refonte de l'UI/UX lorsque Swim Workout aboutira",
                     "url": "https://defiqrcode.lucasbodin.com/"
                 },
                 {
@@ -65,7 +65,7 @@ const App = () => {
                     "company": "Agap2",
                     "title": "DevOps Developer",
                     "years": "Août 2023 - Maintenant",
-                    "description": "Industrialisation des CI/CD des différents projets (Analyse, Build, Deploiement). Analyse du code (Sonarqube, CVE, Linter). Build automatique des images Docker sur Gitlab (chaque semaine afin d'appliquer les patchs de sécurités). Déploiement sur différents environnements via Helm pour Kubernetes. Montée de version des infrastructures/applications. Montée de version ou migration de BDD selon les besoins des projets. Mise en place d'ACL sur les ingress Kubernetes et CloudFlare. Gestion de l'infrastructure Terraform sur AWS. Migration du provider de cartes/auto-completions de Google Maps à Woosmap. Migration de provider de solution d'import de biens immobiliers de PIM à Ubiflow. Ajout de divers outils/configurations sur les postes linux des équipes de développement interne à Pichet via Ansible"
+                    "description": "Après une année passée chez Agap2, j'ai finalement été embauché par mon client Pichet en tant que Devops Developper."
                 },
                 {
                     "company": "CGI",
