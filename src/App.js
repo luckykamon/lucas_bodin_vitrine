@@ -62,15 +62,21 @@ const App = () => {
             ],
             "work": [
                 {
+                    "company": "Pichet",
+                    "title": "DevOps Developer",
+                    "years": "Novembre 2023 - Maintenant",
+                    "description": "Industrialisation des CI/CD des différents projets (Analyse, Build, Deploiement) via les templates Gitlab. Analyse du code (Sonarqube, CVE, Linter). Build automatique des images Docker sur Gitlab. Déploiement sur différents environnements via des templates Helm pour Kubernetes. Montée de version des infrastructures/applications (Php-Fpm, Memcached, Varnish, Solr, Redis, Symfony, Angular). Montée de version ou migration de BDD selon les besoins des projets. Gestion de l'infrastructure Terraform sur AWS. Migration du provider de cartes/auto-completions de Google Maps à Woosmap. Migration de provider de solution d'import de biens immobiliers de PIM à Ubiflow. Ajout de divers outils/configurations sur les postes linux des équipes de développement interne à Pichet via Ansible."
+                },
+                {
                     "company": "Agap2",
                     "title": "DevOps Developer",
-                    "years": "Août 2023 - Maintenant",
+                    "years": "Septembre 2023 - Août 2024",
                     "description": "Après une année passée chez Agap2, j'ai finalement été embauché par mon client Pichet en tant que Devops Developper."
                 },
                 {
                     "company": "CGI",
                     "title": "Consultant développeur",
-                    "years": "Septembre 2021 - Juillet 2023",
+                    "years": "Septembre 2021 - Août 2023",
                     "description": "Mise en place d'un SVI pour Clarins: Il s'agit de gérer le routage d'un client appelant par téléphone/mail/réseaux sociaux/sms/chatbot vers un agent téléphonique en passant par des questions auprès de l'appelant. Puis de la configuration des API avec les différents logiciel de notre agent téléphonique afin de récupérer, d'afficher les données et lancer des processus d'actions (retour d'un produit qui génère mail de livraison avec Mondial Relay par exemple). Amélioration de l'interface agent pour AG2R la Mondiale: Ajout de fonctionnalités afin d'améliorer l'environnement pour les agents tel que de nouvelles API avec différents logiciels externes, ajout de statistiques de performances pour les superviseurs et correction de bugs. Exécutions de scripts python sur les données clients afin de les mettre à jour. POC pour CFE (Caisse des Français de l'Etranger) pour intégrer un nouveau système d'appel: L'objectif était de vérifier si Microsoft Dynamics 365 customer service pouvait répondre au cahier des charges d'un logiciel de téléphonie en fin de licence déjà existant. Mise en place d'un système de gestions de contrats pour les clients de Thales: Développements de fonctionnalités en javascript et C#. Mise en place du déploiement automatique du code sur les différents environnements, de tests automatiques et vérification de la qualité de code"
                 },
                 {
