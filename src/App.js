@@ -62,16 +62,16 @@ const App = () => {
             ],
             "work": [
                 {
-                    "company": "Pichet",
+                    "company": "Groupe Pichet",
                     "title": "DevOps Developer",
                     "years": "Novembre 2023 - Maintenant",
-                    "description": "Industrialisation des CI/CD des différents projets (Analyse, Build, Deploiement) via les templates Gitlab. Analyse du code (Sonarqube, CVE, Linter). Build automatique des images Docker sur Gitlab. Déploiement sur différents environnements via des templates Helm pour Kubernetes. Montée de version des infrastructures/applications (Php-Fpm, Memcached, Varnish, Solr, Redis, Symfony, Angular). Montée de version ou migration de BDD selon les besoins des projets. Gestion de l'infrastructure Terraform sur AWS. Migration du provider de cartes/auto-completions de Google Maps à Woosmap. Migration de provider de solution d'import de biens immobiliers de PIM à Ubiflow. Ajout de divers outils/configurations sur les postes linux des équipes de développement interne à Pichet via Ansible."
+                    "description": "Industrialisation des CI/CD des différents projets (Analyse, Build, Deploiement) via les templates Gitlab. Analyse du code (Sonarqube, CVE, Linter). Build automatique des images Docker sur Gitlab. Déploiement sur différents environnements via des templates Helm pour Kubernetes. Montée de version des infrastructures/applications (Php-Fpm, Memcached, Varnish, Solr, Redis, Symfony, Angular). Montée de version ou migration de BDD selon les besoins des projets. Gestion de l'infrastructure Terraform sur AWS. Migration du provider de cartes/auto-completions de Google Maps à Woosmap. Migration de provider de solution d'import de biens immobiliers de PIM à Ubiflow. Ajout de divers outils/configurations sur les postes linux des équipes de développement interne à Pichet via Ansible"
                 },
                 {
                     "company": "Agap2",
                     "title": "DevOps Developer",
                     "years": "Septembre 2023 - Août 2024",
-                    "description": "Après une année passée chez Agap2, j'ai finalement été embauché par mon client Pichet en tant que Devops Developper."
+                    "description": "Après une année passée chez Agap2, j'ai finalement été embauché par mon client le Groupe Pichet en tant que Devops Developper"
                 },
                 {
                     "company": "CGI",
