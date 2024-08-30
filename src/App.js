@@ -36,7 +36,7 @@ const App = () => {
                     "name": "Swim Workout",
                     "technologies": "Swift - WatchOs - HealthKit",
                     "years": "2023-2024",
-                    "description": "Application IOS/WatchOs permettant de lire ses entrainements de natation sur Apple Watch -> Done. Création et customisation de ses entrainements -> Done. Logique d'affichage différente des applications concurrentes fait par un nageur pour des nageurs pour une réelle utilisation en piscine -> Done. Enregistrement de l'activitée dans HealthKit -> Done. Lecture des données de sa séance fourni via les capteurs -> Almost Done. Génération d'entrainements de natations en fonction de la distance et des équipements à dispositions -> In Progress. Alternative à des applications avec abonnement régulier abusif par manque de concurrence. En développement..",
+                    "description": "Application IOS/WatchOs permettant de lire ses entrainements de natation sur Apple Watch. Création et customisation de ses entrainements. Logique d'affichage différente des applications concurrentes fait par un nageur pour des nageurs pour une réelle utilisation en piscine. Enregistrement de l'activitée dans HealthKit. Lecture des données de sa séance fourni via les capteurs. Génération d'entrainements de natations en fonction de la distance et des équipements à dispositions -> Dans une prochaine version de l'applications. Alternative à des applications avec abonnement régulier abusif par manque de concurrence. Soumission en cours..",
                     "url": ""
                 },
                 {
@@ -57,7 +57,7 @@ const App = () => {
                     "name": "Projets Epitech",
                     "technologies": "Full Stack",
                     "years": "2020 - 2023",
-                    "description": "Recommandation de produits de supermarchés via modèle d'IA. Cooming soon.."
+                    "description": "Divers projets m'ayant permis d'obtenir une connaissance diverse des technologies récentes. Recommandation de produits de supermarchés via modèle d'IA. Application de rencontre sportives. Reconnaissance de pneumonies avec de l'IA à partir d'un dataset de radio. Cooming soon.."
                 }
             ],
             "work": [

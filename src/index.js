@@ -29,6 +29,24 @@ const Confidentialite = () => {
     </div>);
 };
 
+const ConfidentialiteSwimWorkout = () => {
+    return (<div style={{height: "100vh"}}>
+        <Navbar/>
+        <div style={{
+            textAlign: "center", color: "white", margin: "80px 2% 2% 2%"
+        }}>
+            <h1 style={{color: "white"}}>Politique de Confidentialité Swim Workout</h1><br/>
+            <p>Conformément à la loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, ce site recueille uniquement
+                des journaux de données standard, qui incluent l'adresse IP des visiteurs, en configuration par défaut du serveur web Nginx.</p>
+            <p>Concernant notre application iOS, nous ne collectons aucune donnée, que ce soit en termes de journaux, d'analytics ou d'autres informations personnelles.</p>
+            <p>Pour toute question relative à la gestion des données de l'application Swim Workout, n'hésitez pas à me contacter.</p>
+            <p>Date de dernière mise à jour : 31/08/2024</p>
+
+        </div>
+        <div><Footer/></div>
+    </div>);
+};
+
 const LayoutMouseEffect = ({children}) => {
     return (<>
         {children} <MouseParticles g={1} level={10} num={1} color={["#ffffff", "#000000"]} cull="col,image-wrapper"/>
@@ -47,7 +65,22 @@ const Layout = ({children}) => {
     </>);
 };
 
-ReactDOM.render(<ParallaxProvider> <BrowserRouter> <Routes> <Route path="/" element={<Layout><App/></Layout>}/> <Route path="confidentialite"
-                                                                                                                       element={
-                                                                                                                           <Layout><Confidentialite/></Layout>}/>
-    <Route path="*" element={<Layout><App/></Layout>}/> </Routes> </BrowserRouter> </ParallaxProvider>, document.getElementById("root"));
+ReactDOM.render(<ParallaxProvider>
+    <BrowserRouter>
+    <Routes>
+        <Route path="/" element={<Layout><App/></Layout>}/>
+        <Route path="confidentialite" element={
+            <Layout>
+                <Confidentialite/>
+            </Layout>
+        }/>
+        <Route path="confidentialite-swim-workout" element={
+            <Layout>
+                <ConfidentialiteSwimWorkout/>
+            </Layout>
+        }/>
+    <Route path="*" element={<Layout><App/></Layout>}/>
+    </Routes>
+    </BrowserRouter>
+    </ParallaxProvider>,
+document.getElementById("root"));
