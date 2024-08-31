@@ -1,7 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import Fade from "react-reveal";
 
-const TypingEffect = ({text, tag = "h3"}) => {
+const TypingEffect = ({ text, tag = "h3" }) => {
     const [currentText, setCurrentText] = useState(" ");
 
     useEffect(
@@ -40,7 +40,7 @@ const TypingEffect = ({text, tag = "h3"}) => {
 
     return React.createElement(
         tag,
-        {className: "type-effect"},
+        { className: "type-effect" },
         currentText
     );
 };
@@ -68,7 +68,7 @@ function isLightColor(rgbColorString) {
     return brightness > 150;  // On considère que l'on a besoin d'un fond noir si la luminosité perçue est supérieure à 150
 }
 
-export const Navbar = ({isHomePage}) => {
+export const Navbar = ({ isHomePage }) => {
     useEffect(
         () => {
 
@@ -136,7 +136,7 @@ export const Navbar = ({isHomePage}) => {
 
     return (<Fade top>
         <div id="nav-wrap">
-            <ul id="nav" className="nav" style={{fontSize: "13px"}}>
+            <ul id="nav" className="nav" style={{ fontSize: "13px" }}>
                 <li className={isHomePage ? "current" : ""}>
                     <a className={isHomePage ? "smoothscroll" : ""} href="/#home"> Accueil </a>
                 </li>
@@ -152,63 +152,74 @@ export const Navbar = ({isHomePage}) => {
 };
 
 const Header = (props) => {
+    const [profilePic, setProfilePic] = useState("");
     let github;
     let linkedin;
     let name;
     let description;
-    let profilepic;
     if (!props.data) {
         github = "/";
         linkedin = "/";
         name = "";
         description = "";
-        profilepic = "";
     } else {
         github = props.data.github;
         linkedin = props.data.linkedin;
         name = props.data.name;
         description = props.data.description;
-        profilepic = "/images/" + props.data.image;
     }
+
+    useEffect(() => {
+        if (props.data) {
+            setProfilePic("/images/" + props.data.image);
+        }
+    }
+        , [props.data])
 
     return (<header id="home">
 
-        <Navbar isHomePage/>
+        <Navbar isHomePage />
 
         <div className="row banner">
             <div className="banner-text">
                 <Fade bottom>
-                    <h1 className="responsive-headline hoverGrow" style={{marginTop: "50px"}}>{name}</h1>
+                    <h1 className="responsive-headline hoverGrow" style={{ marginTop: "50px" }}>{name}</h1>
                 </Fade>
-                <div style={{height: "4vh"}}/>
+                <div style={{ height: "4vh" }} />
                 <Fade bottom>
-                    <div className={"row"} style={{textAlign: "center", zIndex: "3"}}>
-                        <img className="profile-pic hoverGrow" src={profilepic} alt="Lucas Bodin Profile Pic"/>
+                    <div className={"row"} style={{ textAlign: "center", zIndex: "3" }}>
+                        <img
+                            className="profile-pic hoverGrow"
+                            src={profilePic}
+                            alt="Lucas Bodin Profile Pic"
+                            onMouseOver={() => setProfilePic("/images/" + props.data.image2)}
+                            onMouseOut={() => setProfilePic("/images/" + props.data.image)}
+                        />
                     </div>
                 </Fade>
-                <div style={{height: "6vh"}}/>
-                <Fade bottom duration={1200}> <TypingEffect text={description}/> </Fade>
-                <div style={{height: "2vh"}}/>
-                <br/> <br/> <Fade bottom duration={2000}>
-                <ul className="social" style={{display: "flex", justifyContent: "center"}}>
-                    <div className={"hoverGrow"}>
-                        <a href={github} target="_blank" rel="noreferrer" className="button btn hover-grow"
-                           style={{borderRadius: "10px", color: "black", backgroundColor: "white"}}> <i
-                            style={{marginRight: "5px", marginLeft: "5px"}} className="fa fa-github"/>Github </a>
-                    </div>
+                <div style={{ height: "6vh" }} />
+                <Fade bottom duration={1200}> <TypingEffect text={description} /> </Fade>
+                <div style={{ height: "2vh" }} />
+                <br /> <br /> <Fade bottom duration={2000}>
+                    <ul className="social" style={{ display: "flex", justifyContent: "center" }}>
+                        <div className={"hoverGrow"}>
+                            <a href={github} target="_blank" rel="noreferrer" className="button btn hover-grow"
+                                style={{ borderRadius: "10px", color: "black", backgroundColor: "white" }}> <i
+                                    style={{ marginRight: "5px", marginLeft: "5px" }} className="fa fa-github" />Github </a>
+                        </div>
 
-                    <div className={"hoverGrow"}>
-                        <a href={linkedin} target="_blank" rel="noreferrer" className="button btn hover-grow"
-                           style={{borderRadius: "10px", color: "black", backgroundColor: "white"}}> <i
-                            style={{marginRight: "5px", marginLeft: "5px"}} className="fa fa-linkedin"/>Linkedin </a>
-                    </div>
-                </ul>
-            </Fade>
+                        <div className={"hoverGrow"}>
+                            <a href={linkedin} target="_blank" rel="noreferrer" className="button btn hover-grow"
+                                style={{ borderRadius: "10px", color: "black", backgroundColor: "white" }}> <i
+                                    style={{ marginRight: "5px", marginLeft: "5px" }} className="fa fa-linkedin" />Linkedin </a>
+                        </div>
+                    </ul>
+                </Fade>
             </div>
         </div>
 
         <p className="scrolldown">
-            <a className="smoothscroll" href="#resume"> <i className="icon-down-circle"/> </a>
+            <a className="smoothscroll" href="#resume"> <i className="icon-down-circle" /> </a>
         </p>
     </header>);
 
@@ -216,4 +227,4 @@ const Header = (props) => {
 
 export default Header;
 
-export {TypingEffect};
+export { TypingEffect };

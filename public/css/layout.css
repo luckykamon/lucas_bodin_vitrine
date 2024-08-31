@@ -21,6 +21,7 @@
 /* Me: */
 .profile-pic:hover {
     /*transform: scale(3);*/
+    cursor: pointer;
 }
 
 #contactMessage:focus, #contactSubject:focus {

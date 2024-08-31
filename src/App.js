@@ -11,6 +11,7 @@ const App = () => {
             "name": "Lucas BODIN",
             "description": "DevOps Developer.",
             "image": "profilepic.jpg",
+            "image2": "profilepic2.png",
             "email": "lucas.bodin.contacter@gmail.com",
             "contactmessage": "Pour toute demande de collaboration professionnelle, merci de m'envoyer un mail.",
             "github": "https://github.com/luckykamon",
