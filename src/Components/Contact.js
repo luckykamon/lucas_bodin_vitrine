@@ -1,5 +1,7 @@
 import React from "react";
 import {Fade} from "react-reveal";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = (props) => {
     if (!props.data) return null;
@@ -12,21 +14,14 @@ const Contact = (props) => {
         window.open("mailto:lucas.bodin.contacter@gmail.com?subject=" + subject + "&body=" + body);
     };
 
-    // Display flex if screen width is less than 768px
-    if (window.innerWidth < 768) {
-
-    }
-
     return (
         <>
             <section id="contact">
                 <div className="row section-head"
                      style={{display: window.innerWidth >= 768 ? "flex" : "block", alignItems: "center"}}>
                     <Fade left duration={1000}>
-                        <div className="two columns header-col" style={{width: "26%"}}>
-                            <h1>
-                                <span>Contact</span>
-                            </h1>
+                        <div className="two columns" style={{width: "26%"}}>
+                            <FontAwesomeIcon icon={faEnvelope} size="5x" color="#EBEEEE"/>
                         </div>
                     </Fade> <Fade right duration={1000}>
                     <div style={{width: "100%"}}>
@@ -59,7 +54,7 @@ const Contact = (props) => {
                             <div style={{textAlign: "center"}}>
                                 <button className="submit"
                                         style={{borderRadius: "10px", backgroundColor: "#E8EBEB", color: "black"}}
-                                        onClick={sendEmail}>Envoyer le mail
+                                        onClick={sendEmail}>Envoyer le mail <FontAwesomeIcon icon={faPaperPlane} size="2"/>
                                 </button>
                             </div>
                         </Fade>

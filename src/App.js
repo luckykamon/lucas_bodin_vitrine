@@ -15,6 +15,7 @@ const App = () => {
             "email": "lucas.bodin.contacter@gmail.com",
             "contactmessage": "Pour toute demande de collaboration professionnelle, merci de m'envoyer un mail.",
             "github": "https://github.com/luckykamon",
+            "gitlab": "https://gitlab.com/luckykamon",
             "linkedin": "https://www.linkedin.com/in/lucasbodin/",
             "website": "lucasbodin.com",
             "social": [
@@ -22,6 +23,11 @@ const App = () => {
                     "name": "github",
                     "url": "https://github.com/luckykamon",
                     "className": "fa fa-github"
+                },
+                {
+                    "name": "gitlab",
+                    "url": "https://gitlab.com/luckykamon",
+                    "className": "fa fa-square-gitlab"
                 },
                 {
                     "name": "linkedin",

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Fade from "react-reveal";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faGitlab, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
-const TypingEffect = ({ text, tag = "h3" }) => {
+const TypingEffect = ({ text, tag = "span" }) => {
     const [currentText, setCurrentText] = useState(" ");
 
     useEffect(
@@ -38,10 +40,21 @@ const TypingEffect = ({ text, tag = "h3" }) => {
         [text]
     );
 
+    const renderedText = currentText.split('').map((char, i) => (
+        <span
+            key={i}
+            style={{
+                whiteSpace: char === ' ' ? 'pre' : 'normal'
+            }}
+        >
+            {char}
+        </span>
+    ));
+
     return React.createElement(
         tag,
         { className: "type-effect" },
-        currentText
+        renderedText
     );
 };
 
@@ -154,16 +167,19 @@ export const Navbar = ({ isHomePage }) => {
 const Header = (props) => {
     const [profilePic, setProfilePic] = useState("");
     let github;
+    let gitlab;
     let linkedin;
     let name;
     let description;
     if (!props.data) {
         github = "/";
+        gitlab = "/";
         linkedin = "/";
         name = "";
         description = "";
     } else {
         github = props.data.github;
+        gitlab = props.data.gitlab;
         linkedin = props.data.linkedin;
         name = props.data.name;
         description = props.data.description;
@@ -198,23 +214,26 @@ const Header = (props) => {
                     </div>
                 </Fade>
                 <div style={{ height: "6vh" }} />
-                <Fade bottom duration={1200}> <TypingEffect text={description} /> </Fade>
+                <Fade bottom duration={1200}> <h3><TypingEffect text={description} /></h3> </Fade>
                 <div style={{ height: "2vh" }} />
                 <br /> <br /> <Fade bottom duration={2000}>
-                    <ul className="social" style={{ display: "flex", justifyContent: "center" }}>
-                        <div className={"hoverGrow"}>
-                            <a href={github} target="_blank" rel="noreferrer" className="button btn hover-grow"
-                                style={{ borderRadius: "10px", color: "black", backgroundColor: "white" }}> <i
-                                    style={{ marginRight: "5px", marginLeft: "5px" }} className="fa fa-github" />Github </a>
-                        </div>
-
-                        <div className={"hoverGrow"}>
-                            <a href={linkedin} target="_blank" rel="noreferrer" className="button btn hover-grow"
-                                style={{ borderRadius: "10px", color: "black", backgroundColor: "white" }}> <i
-                                    style={{ marginRight: "5px", marginLeft: "5px" }} className="fa fa-linkedin" />Linkedin </a>
-                        </div>
-                    </ul>
-                </Fade>
+                <ul className="social" style={{ display: "flex", justifyContent: "center" }}>
+                    <div className={"hoverGrow"}>
+                        <a href={gitlab} target="_blank" rel="noreferrer" className="button btn hover-grow"
+                           style={{ borderRadius: "10px", color: "black", backgroundColor: "white" }}>
+                            <FontAwesomeIcon icon={faGitlab} /> Gitlab </a>
+                    </div>
+                    <div className={"hoverGrow"}>
+                        <a href={linkedin} target="_blank" rel="noreferrer" className="button btn hover-grow"
+                           style={{ borderRadius: "10px", color: "black", backgroundColor: "white" }}> <FontAwesomeIcon
+                            icon={faLinkedinIn} /> Linkedin </a>
+                    </div>
+                    <div className={"hoverGrow"}>
+                        <a href={github} target="_blank" rel="noreferrer" className="button btn hover-grow"
+                           style={{ borderRadius: "10px", color: "black", backgroundColor: "white" }}> <FontAwesomeIcon icon={faGithub} /> Github </a>
+                    </div>
+                </ul>
+            </Fade>
             </div>
         </div>
 

@@ -23,3 +23,16 @@
 @keyframes blink {
     to { opacity: .0 }
 }
+
+@keyframes riseAndFall {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(0); }
+    54% { transform: translateY(-10px); }
+    58% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+
+.type-effect span {
+    display: inline-block;
+    animation: riseAndFall 5s ease-in-out infinite;
+}
