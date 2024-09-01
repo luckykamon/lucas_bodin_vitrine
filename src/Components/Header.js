@@ -89,11 +89,9 @@ export const Navbar = ({ isHomePage }) => {
             const header = Array.from(document.querySelectorAll("header"));
             const combined = header.concat(sections);
 
-            const navigation_links = document.querySelectorAll("#nav-wrap a");
             const navbar = document.querySelector("#nav-wrap");
 
             const changeNavOnScroll = () => {
-                let active_section;
                 let active_section_navbar;
 
                 let minScrollUp = null;
@@ -101,26 +99,11 @@ export const Navbar = ({ isHomePage }) => {
                 combined.forEach((section) => {
 
                     const sectionTop = section.offsetTop;
-                    const sectionHeight = section.offsetHeight;
 
                     let scrollUpSection = Math.abs(sectionTop - window.pageYOffset);
                     if (minScrollUp === null || (sectionTop !== 0 && minScrollUp > scrollUpSection && window.pageYOffset > sectionTop - 32)) { // 32 = hauteur de la navbar en px
                         minScrollUp = scrollUpSection;
                         active_section_navbar = section;
-                    }
-
-                    if (window.pageYOffset > sectionTop - sectionHeight / 3) {
-                        active_section = section;
-                        let selector = `#nav-wrap a[href="/#${active_section?.id}"]`;
-                        let active_link = document.querySelector(selector);
-
-                        navigation_links.forEach((link) => {
-                            link.parentElement.classList.remove("current");
-                        });
-
-                        if (active_link) {
-                            active_link.parentElement.classList.add("current");
-                        }
                     }
                 });
 
@@ -149,15 +132,36 @@ export const Navbar = ({ isHomePage }) => {
 
     return (<Fade top>
         <div id="nav-wrap">
-            <ul id="nav" className="nav" style={{ fontSize: "13px" }}>
-                <li className={isHomePage ? "current" : ""}>
-                    <a className={isHomePage ? "smoothscroll" : ""} href="/#home"> Accueil </a>
+            <ul id="nav" className="nav" style={{ fontSize: '13px' }}>
+                <li className={isHomePage ? 'current' : ''}>
+                    <a href="/#home" onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+                    }}> Accueil </a>
                 </li>
                 <li>
-                    <a className={isHomePage ? "smoothscroll" : ""} href="/#resume"> Résumé </a>
+                    <a href="/#resume" onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById('resume').scrollIntoView({ behavior: 'smooth' });
+                    }}> Projets </a>
                 </li>
                 <li>
-                    <a className={isHomePage ? "smoothscroll" : ""} href="/#contact"> Contact </a>
+                    <a href="/#experience" onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById('experience').scrollIntoView({ behavior: 'smooth' });
+                    }}> Expériences </a>
+                </li>
+                <li>
+                    <a href="/#formation" onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById('formation').scrollIntoView({ behavior: 'smooth' });
+                    }}> Formations </a>
+                </li>
+                <li>
+                    <a href="/#contact" onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+                    }}> Contact </a>
                 </li>
             </ul>
         </div>
@@ -165,7 +169,7 @@ export const Navbar = ({ isHomePage }) => {
 };
 
 const Header = (props) => {
-    const [profilePic, setProfilePic] = useState("");
+    const [profilePic, setProfilePic] = useState('');
     let github;
     let gitlab;
     let linkedin;
@@ -210,6 +214,9 @@ const Header = (props) => {
                             alt="Lucas Bodin Profile Pic"
                             onMouseOver={() => setProfilePic("/images/" + props.data.image2)}
                             onMouseOut={() => setProfilePic("/images/" + props.data.image)}
+                            onClick={()=> {
+                                document.getElementById('resume').scrollIntoView({ behavior: 'smooth' });
+                            }}
                         />
                     </div>
                 </Fade>
@@ -238,7 +245,10 @@ const Header = (props) => {
         </div>
 
         <p className="scrolldown">
-            <a className="smoothscroll" href="#resume"> <i className="icon-down-circle" /> </a>
+            <a className="smoothscroll" href="#resume" onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('resume').scrollIntoView({ behavior: 'smooth' });
+            }}> <i className="icon-down-circle" /> </a>
         </p>
     </header>);
 

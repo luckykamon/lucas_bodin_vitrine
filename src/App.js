@@ -13,7 +13,7 @@ const App = () => {
             "image": "profilepic.jpg",
             "image2": "profilepic2.png",
             "email": "lucas.bodin.contacter@gmail.com",
-            "contactmessage": "Pour toute demande de collaboration professionnelle, merci de m'envoyer un mail.",
+            "contactmessage": "Pour toute demande de collaboration professionnelle, n'hésitez pas à m'envoyer un mail.",
             "github": "https://github.com/luckykamon",
             "gitlab": "https://gitlab.com/luckykamon",
             "linkedin": "https://www.linkedin.com/in/lucasbodin/",
@@ -125,7 +125,7 @@ const App = () => {
     return (
         <div className="App">
             <Header data={resumeData.main}/> <Resume data={resumeData.resume}/> <Contact data={resumeData.main}/>
-            <Footer top data={resumeData.main}/>
+            <Footer data={resumeData.main}/>
 
         </div>
     );

@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from 'react';
 import {Fade} from "react-reveal";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = (props) => {
+
+    const [defaultObject, setDefaultObject] = useState(
+        "Demande de collaboration professionnelle"
+    )
+    const [defaultMessage, setDefaultMessage] = useState(
+        "[Formule de politesse],\nJe vous contacte à propos de [décrire la demande]\nVotre profil semble convenir à nos attentes [indiquer les technologies interressantes ou vos raisons]"
+    )
+
     if (!props.data) return null;
 
     const message = props.data.contactmessage;
@@ -16,7 +24,14 @@ const Contact = (props) => {
 
     return (
         <>
-            <section id="contact">
+            <section id="contact" style={{minHeight: "90vh"}}>
+                <Fade right duration={1000}>
+                <div>
+                    <h1 style={{textAlign: "center", borderBottom: "3px solid #fe6928", width: "fit-content", margin: "auto", paddingBottom: "6px"}}>Me Contacter</h1>
+                    <br/>
+                    <br/>
+                </div>
+                </Fade>
                 <div className="row section-head"
                      style={{display: window.innerWidth >= 768 ? "flex" : "block", alignItems: "center"}}>
                     <Fade left duration={1000}>
@@ -24,7 +39,7 @@ const Contact = (props) => {
                             <FontAwesomeIcon icon={faEnvelope} size="5x" color="#EBEEEE"/>
                         </div>
                     </Fade> <Fade right duration={1000}>
-                    <div style={{width: "100%"}}>
+                    <div style={{width: "100%", paddingLeft: "50px"}}>
                         <div style={{color: "white", textAlign: "center"}}>{message}</div>
                     </div>
                 </Fade>
@@ -36,7 +51,7 @@ const Contact = (props) => {
                             <Fade left duration={1000}><label htmlFor="contactSubject">Objet</label></Fade> <Fade right
                                                                                                                   duration={1000}><input
                             type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject"
-                            style={{borderRadius: "10px", backgroundColor: "#E8EBEB", color: "black"}}/> </Fade>
+                            style={{borderRadius: "10px", backgroundColor: "#E8EBEB", color: "black"}} value={defaultObject} onChange={(_,newValue)=> {setDefaultObject(newValue)}}/> </Fade>
                         </div>
 
 
@@ -47,14 +62,15 @@ const Contact = (props) => {
                             borderRadius: "10px",
                             backgroundColor: "#E8EBEB",
                             color: "black"
-                        }}/></Fade>
+                        }} value={defaultMessage} onChange={(_, newValue)=> {setDefaultMessage(newValue)}}
+                        /></Fade>
                         </div>
 
                         <Fade left duration={1000}>
                             <div style={{textAlign: "center"}}>
                                 <button className="submit"
                                         style={{borderRadius: "10px", backgroundColor: "#E8EBEB", color: "black"}}
-                                        onClick={sendEmail}>Envoyer le mail <FontAwesomeIcon icon={faPaperPlane} size="2"/>
+                                        onClick={sendEmail}>Envoyer le mail <FontAwesomeIcon icon={faPaperPlane}/>
                                 </button>
                             </div>
                         </Fade>

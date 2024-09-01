@@ -253,10 +253,6 @@ ul#nav li a:active {
     background-color: transparent !important;
 }
 
-ul#nav li.current a {
-    color: #fe6928;
-}
-
 
 /* ------------------------------------------------------------------ */
 /* c. About Section
@@ -1024,7 +1020,7 @@ call-to-action .button {
 }
 
 #contact h1 {
-    font: 18px/24px 'opensans-bold', sans-serif;
+    font: 36px 'opensans-bold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #EBEEEE;
@@ -1033,17 +1029,6 @@ call-to-action .button {
 
 #contact h1 span {
     display: none;
-}
-
-#contact h1:before {
-    font-family: 'FontAwesome', sans-serif;
-    content: "\f0e0";
-    padding-right: 10px;
-    font-size: 72px;
-    line-height: 72px;
-    text-align: left;
-    float: left;
-    color: #ebeeee;
 }
 
 #contact h4 {

@@ -8,6 +8,7 @@
 .type-effect:after {
     content: '|';
     animation: blink 1s infinite;
+    color: #fe6928;
 }
 
 @keyframes typing {

@@ -54,22 +54,21 @@ const Resume = ({data}) => {
                         </div>
                     </div>
                 </div>
-
+                <br id="experience"/>
                 <div className="row work">
                     <div className="three columns header-col">
                         <h1>
-                            <span>Expérience</span>
+                            <span>Expériences</span>
                         </h1>
                     </div>
 
                     <div className="nine columns main-col">{work}</div>
                 </div>
-
-
+                <br id="formation"/>
                 <div className="row education">
                     <div className="three columns header-col">
                         <h1>
-                            <span>Formation</span>
+                            <span>Formations</span>
                         </h1>
                     </div>
 
