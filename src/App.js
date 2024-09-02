@@ -43,8 +43,8 @@ const App = () => {
                     "name": "Swim Workout",
                     "technologies": "Swift - WatchOs - HealthKit",
                     "years": "2023-2024",
-                    "description": "Application IOS/WatchOs permettant de lire ses entrainements de natation sur Apple Watch. Création et customisation de ses entrainements. Logique d'affichage différente des applications concurrentes fait par un nageur pour des nageurs pour une réelle utilisation en piscine. Enregistrement de l'activitée dans HealthKit. Lecture des données de sa séance fourni via les capteurs. Génération d'entrainements de natations en fonction de la distance et des équipements à dispositions -> Dans une prochaine version de l'applications. Alternative à des applications avec abonnement régulier abusif par manque de concurrence. Soumission en cours..",
-                    "url": ""
+                    "description": "Application IOS/WatchOs permettant de lire ses entrainements de natation sur Apple Watch. Création et customisation de ses entrainements. Logique d'affichage différente des applications concurrentes fait par un nageur pour des nageurs pour une réelle utilisation en piscine. Enregistrement de l'activitée dans HealthKit. Lecture des données de sa séance fourni via les capteurs. Alternative à des applications avec abonnement régulier abusif par manque de concurrence. Génération d'entrainements de natations en fonction de la distance et des équipements à dispositions: Lors d'une prochaine version",
+                    "url": "https://apps.apple.com/fr/app/swim-workout/id6503651445"
                 },
                 {
                     "name": "Défi Qr Code",

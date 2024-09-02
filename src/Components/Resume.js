@@ -39,7 +39,7 @@ const Resume = ({data}) => {
     });
 
     return (
-        <section id="resume" style={{borderRadius: "30px", padding: 0}}>
+        <section id="resume" style={{borderRadius: "30px", padding: 0, textAlign: "justify"}}>
             <Parallax speed={30}>
                 <div className="row education">
                     <div className="three columns header-col">

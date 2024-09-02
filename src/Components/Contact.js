@@ -24,7 +24,7 @@ const Contact = (props) => {
 
     return (
         <>
-            <section id="contact" style={{minHeight: "90vh"}}>
+            <section id="contact" style={{minHeight: "91vh"}}>
                 <Fade right duration={1000}>
                 <div>
                     <h1 style={{textAlign: "center", borderBottom: "3px solid #fe6928", width: "fit-content", margin: "auto", paddingBottom: "6px"}}>Me Contacter</h1>
@@ -32,45 +32,46 @@ const Contact = (props) => {
                     <br/>
                 </div>
                 </Fade>
-                <div className="row section-head"
-                     style={{display: window.innerWidth >= 768 ? "flex" : "block", alignItems: "center"}}>
-                    <Fade left duration={1000}>
-                        <div className="two columns" style={{width: "26%"}}>
-                            <FontAwesomeIcon icon={faEnvelope} size="5x" color="#EBEEEE"/>
-                        </div>
-                    </Fade> <Fade right duration={1000}>
-                    <div style={{width: "100%", paddingLeft: "50px"}}>
-                        <div style={{color: "white", textAlign: "center"}}>{message}</div>
-                    </div>
-                </Fade>
-                </div>
 
                 <div className="row">
-                    <div className="columns" style={{width: "100%"}}>
+                    <div className="columns" style={{ width: '100%' }}>
+                        <div>
+                            <Fade left duration={1000}>
+                                <div className="two columns" style={{ width: '26%', padding: 0 }}>
+                                    <FontAwesomeIcon icon={faEnvelope} size="5x" color="#EBEEEE" />
+                                </div>
+                            </Fade>
+                            <Fade right duration={1000}>
+                                <div style={{ width: '100%'}}>
+                                    <div style={{ color: 'white', textAlign: 'center' }}><p style={{paddingTop: '20px', marginBottom: '30px'}}>{message}</p></div>
+                                </div>
+                            </Fade>
+                        </div>
+
                         <div>
                             <Fade left duration={1000}><label htmlFor="contactSubject">Objet</label></Fade> <Fade right
                                                                                                                   duration={1000}><input
                             type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject"
-                            style={{borderRadius: "10px", backgroundColor: "#E8EBEB", color: "black"}} value={defaultObject} onChange={(_,newValue)=> {setDefaultObject(newValue)}}/> </Fade>
+                            style={{ borderRadius: '10px', backgroundColor: '#E8EBEB', color: 'black' }} value={defaultObject}
+                            onChange={(_, newValue) => {setDefaultObject(newValue);}} /> </Fade>
                         </div>
 
-
                         <div>
-                            <Fade left duration={1000}><label htmlFor="contactMessage">Message</label></Fade> <Fade
-                            right duration={1000}><textarea cols="50" rows="15" id="contactMessage"
-                                                            name="contactMessage" style={{
-                            borderRadius: "10px",
-                            backgroundColor: "#E8EBEB",
-                            color: "black"
-                        }} value={defaultMessage} onChange={(_, newValue)=> {setDefaultMessage(newValue)}}
-                        /></Fade>
+                            <Fade left duration={1000}><label htmlFor="contactMessage">Message</label></Fade>
+                            <Fade right duration={1000}><textarea cols="50" rows="18" id="contactMessage" name="contactMessage" style={{
+                                borderRadius: '10px',
+                                backgroundColor: '#E8EBEB',
+                                color: 'black',
+                            }} value={defaultMessage} onChange={(_, newValue) => {setDefaultMessage(newValue);}}
+                            />
+                            </Fade>
                         </div>
 
                         <Fade left duration={1000}>
-                            <div style={{textAlign: "center"}}>
+                            <div style={{ textAlign: 'center' }}>
                                 <button className="submit"
-                                        style={{borderRadius: "10px", backgroundColor: "#E8EBEB", color: "black"}}
-                                        onClick={sendEmail}>Envoyer le mail <FontAwesomeIcon icon={faPaperPlane}/>
+                                        style={{ borderRadius: '10px', backgroundColor: '#E8EBEB', color: 'black' }}
+                                        onClick={sendEmail}>Envoyer le mail <FontAwesomeIcon icon={faPaperPlane} />
                                 </button>
                             </div>
                         </Fade>
