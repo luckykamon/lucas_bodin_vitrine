@@ -37,3 +37,28 @@
     display: inline-block;
     animation: riseAndFall 5s ease-in-out infinite;
 }
+
+@keyframes downSlowly {
+    0% { transform: translateY(0); }
+    50% {
+        transform: translateY(0);
+        color: #525252;
+    }
+    70% {
+        transform: translateY(+20px);
+        color: white;
+    }
+    80% {
+        transform: translateY(0);
+    }
+    85% {
+        color: #525252;
+    }
+    100% { transform: translateY(0); }
+}
+
+p a i.icon-down-circle {
+    display: inline-block;
+    animation: downSlowly 5s ease-in-out infinite;
+}
+
