@@ -36,10 +36,6 @@
       font: 17px/1.9em 'librebaskerville-regular', serif;
       width: 80%;
    }
-   header .banner-text hr {
-      width: 65%;
-      margin: 12px auto;
-   }
    /* nav-wrap */
    #nav-wrap {
       font: 11px 'opensans-bold', sans-serif;
@@ -49,13 +45,6 @@
 
    /* About Section
    ------------------------------------------------------------------- */
-   #about .profile-pic {
-      width: 114px;
-      height: 114px;
-      margin-left: 12px;
-   }
-   #about .contact-details { width: 50%; }
-   #about .download { width: 50%; }
 
    /* Resume Section
    ------------------------------------------------------------------- */
@@ -64,21 +53,9 @@
 
    /* Testimonials Section
    ------------------------------------------------------------------- */
-   #testimonials .header-col h1:before {
-      font-size: 66px;
-      line-height: 66px;
-   }
-   #testimonials blockquote p {
-      font-size: 22px;
-      line-height: 46px;
-   }
 
     /* Call to Action Section
    ------------------------------------------------------------------- */
-   #call-to-action .header-col h1:before {
-      font-size: 66px;
-      line-height: 66px;
-   }
 
    /* Contact Section
    ------------------------------------------------------------------- */
@@ -87,7 +64,6 @@
       font-size: 66px;
       line-height: 66px;
    }
-   #contact .section-head p.lead { font: 17px/33px opensans-light, sans-serif; }
 
 
 }
@@ -196,10 +172,6 @@
       font: 16px/1.9em 'librebaskerville-regular', serif;
       width: 85%;
    }
-   header .banner-text hr {
-      width: 80%;
-      margin: 18px auto;
-   }
 
    /* header social links */
    header .social {
@@ -215,13 +187,6 @@
 
    /* About Section
    -------------------------------------------------------------------- */
-   #about .profile-pic { display: none; }
-   #about .download .button {
-      width: 100%;
-      text-align: center;
-      padding: 15px 20px;
-   }
-   #about .main-col { padding-right: 30px; }
 
 
    /* Resume Section
@@ -235,51 +200,19 @@
    #resume .main-col { padding-right: 30px; }
    #resume h3, #resume .info { text-align: center; }
 
-   .bars { width: 100%; }
-
 
    /* Call To Action Section
    /* ----------------------------------------------------------------- */
-   #call-to-action { text-align: center; }
-   #call-to-action h1 {
-      font: 16px/24px 'opensans-bold', sans-serif;
-      text-align: center;
-      margin-bottom: 30px;
-      text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-   }
-   #call-to-action h1 span { display: block; }
-   #call-to-action .header-col h1:before { content: none; }
-   #call-to-action p { font-size: 15px; }
 
 
    /* Portfolio Section
    /* ----------------------------------------------------------------- */
-   #portfolio-wrapper .columns { margin-bottom: 40px; }
-   .popup-modal {	max-width: 85%; }
 
 
    /* Testimonials Section
    ----------------------------------------------------------------------- */
-   #testimonials .text-container { text-align: center; }
-   #testimonials h1 {
-      font: 16px/24px 'opensans-bold', sans-serif;
-      text-align: center;
-      margin-bottom: 30px;
-      text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-   }
-   #testimonials h1 span { display: block; }
-   #testimonials .header-col h1:before { content: none; }
-   #testimonials blockquote { padding-bottom: 24px; }
-   #testimonials blockquote p {
-      font-size: 20px;
-      line-height: 42px;
-   }
 
    /* Control Nav */
-   .flex-control-nav {
-      text-align: center;
-      margin-left: -30px;
-   }
 
 
    /* contact Section
@@ -295,7 +228,6 @@
    #contact h1 span { display: block; }
    #contact .header-col { padding-top: 0; }
    #contact .header-col h1:before { content: none;	}
-   #contact .section-head p.lead { text-align: center;}
 
    /* form */
    #contact label {
@@ -303,16 +235,11 @@
       width: 100%;
    }
    #contact input,
-   #contact textarea,
-   #contact select {
+   #contact textarea {
      	margin-bottom: 6px;
       width: 100%;
    }
    #contact button.submit { margin: 30px 0 24px 0; }
-   #message-warning, #message-success {
-      width: 100%;
-      margin-left: 0;
-   }
 
    /*.widget_contact {*/
    #contact {
@@ -328,17 +255,8 @@
    footer .copyright li { margin-right: 12px; }
 
    /* social links */
-   footer .social-links { font-size: 22px; }
-   footer .social-links li { margin-left: 18px; }
 
    /* Go To Top Button */
-   #go-top { margin-left: -22px; }
-   #go-top a {
-   	width: 54px;
-   	height: 54px;
-      font-size: 18px;
-      line-height: 54px;
-   }
 
 
 }
@@ -379,8 +297,6 @@
    ------------------------------------------------------------------------ */
 
    /* social links */
-   footer .social-links { font-size: 20px; }
-   footer .social-links li { margin-left: 14px; }
 
 }
 
