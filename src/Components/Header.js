@@ -224,20 +224,20 @@ const Header = (props) => {
                 <Fade bottom duration={1200}> <h3><TypingEffect text={description} /></h3> </Fade>
                 <div style={{ height: "2vh" }} />
                 <br /> <br /> <Fade bottom duration={2000}>
-                <ul className="social" style={{ display: "flex", justifyContent: "center" }}>
+                <ul className="social" style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
                     <div className={"hoverGrow"}>
                         <a href={gitlab} target="_blank" rel="noreferrer" className="button btn hover-grow"
                            style={{ borderRadius: "10px", color: "black", backgroundColor: "white" }}>
-                            <FontAwesomeIcon icon={faGitlab} /> Gitlab </a>
+                            <FontAwesomeIcon icon={faGitlab} />&nbsp;Gitlab </a>
                     </div>
-                    <div className={"hoverGrow"}>
+                    <div className={"hoverGrow linkedin"}>
                         <a href={linkedin} target="_blank" rel="noreferrer" className="button btn hover-grow"
                            style={{ borderRadius: "10px", color: "black", backgroundColor: "white" }}> <FontAwesomeIcon
-                            icon={faLinkedinIn} /> Linkedin </a>
+                            icon={faLinkedinIn} />&nbsp;Linkedin </a>
                     </div>
                     <div className={"hoverGrow"}>
                         <a href={github} target="_blank" rel="noreferrer" className="button btn hover-grow"
-                           style={{ borderRadius: "10px", color: "black", backgroundColor: "white" }}> <FontAwesomeIcon icon={faGithub} /> Github </a>
+                           style={{ borderRadius: "10px", color: "black", backgroundColor: "white" }}> <FontAwesomeIcon icon={faGithub} />&nbsp;Github </a>
                     </div>
                 </ul>
             </Fade>

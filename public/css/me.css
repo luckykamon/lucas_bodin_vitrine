@@ -5,3 +5,29 @@
 .hoverGrow:hover {
     transform: scale(1.2);
 }
+
+.button.btn.hover-grow {
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hoverGrow {
+    margin: 5px;
+}
+
+@media (max-width: 623px) {
+    .linkedin {
+        order: 3;
+        text-align: center;
+    }
+
+    .hoverGrow:not(.linkedin) {
+        text-align: center;
+    }
+}

@@ -346,6 +346,13 @@
 /* mobile narrow
   -------------------------------------------------------------------------- */
 
+@media only screen and (max-width: 502px) {
+   header .banner-text h1 {
+      font: 40px/1.1em 'opensans-bold', sans-serif;
+      margin: 0 auto 24px auto;
+   }
+}
+
 @media only screen and (max-width: 480px) {
 
    /* mobile navigation
