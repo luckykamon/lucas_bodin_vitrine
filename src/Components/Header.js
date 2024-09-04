@@ -215,7 +215,7 @@ const Header = (props) => {
                             onMouseOver={() => setProfilePic("/images/" + props.data.image2)}
                             onMouseOut={() => setProfilePic("/images/" + props.data.image)}
                             onClick={()=> {
-                                document.getElementById('resume').scrollIntoView({ behavior: 'smooth' });
+                                window.open("https://stackoverflow.com/users/7900469/lucas-bodin", '_blank');
                             }}
                         />
                     </div>
