@@ -1,0 +1,38 @@
+/* ------------------------------------------------------------------
+   site.css — surcouche statique
+   Objectif : le contenu reste lisible SANS JavaScript et SANS animation.
+   Les effets (fade-in, typing) ne s'appliquent que si le JS a ajouté la
+   classe .js sur <html>, et jamais en cas de prefers-reduced-motion.
+------------------------------------------------------------------ */
+
+/* Sans JS : on neutralise les états initiaux masqués des animations */
+html:not(.js) .fade-in-up,
+html:not(.js) .fade-in-down,
+html:not(.js) .fade-in-left,
+html:not(.js) .fade-in-right,
+html:not(.js) .type-effect {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    width: auto !important;
+    border-right: 0 !important;
+}
+
+html:not(.js) .type-effect:after { content: "" !important; }
+
+/* Accessibilité : pas d'animation si l'utilisateur la refuse */
+@media (prefers-reduced-motion: reduce) {
+    .fade-in-up, .fade-in-down, .fade-in-left, .fade-in-right, .type-effect,
+    .type-effect span, .hoverGrow, p a i.icon-down-circle {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+        transition: none !important;
+        width: auto !important;
+    }
+    .type-effect { border-right: 0 !important; }
+    .type-effect:after { content: "" !important; }
+}
+
+/* Photo de profil : curseur indiquant le lien */
+.profile-pic { cursor: pointer; }

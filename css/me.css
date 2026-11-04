@@ -1,0 +1,106 @@
+.hoverGrow {
+    transition: transform 0.5s ease;
+}
+
+.hoverGrow:hover {
+    transform: scale(1.2);
+}
+
+.button.btn.hover-grow {
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hoverGrow {
+    margin: 5px;
+}
+
+@media (max-width: 623px) {
+    .linkedin {
+        order: 3;
+        text-align: center;
+    }
+
+    .hoverGrow:not(.linkedin) {
+        text-align: center;
+    }
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(80px); /* L'élément part du bas */
+    animation: fadeInUp ease 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80px); /* Départ de plus bas */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Position finale */
+    }
+}
+
+.fade-in-down {
+    opacity: 0;
+    transform: translateY(-80px); /* L'élément part du haut */
+    animation: fadeInDown ease 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px); /* Départ de plus bas */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Position finale */
+    }
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-80px); /* L'élément part du haut */
+    animation: fadeInLeft ease 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-80px); /* Départ de plus bas */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Position finale */
+    }
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(80px); /* L'élément part du haut */
+    animation: fadeInRight ease 1.5s;
+    animation-fill-mode: forwards;
+    will-change: transform, opacity; /* Optimisation des performances */
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(80px); /* Départ de plus bas */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Position finale */
+    }
+}
